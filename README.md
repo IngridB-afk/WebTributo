@@ -7,9 +7,11 @@ WebTributo is a web page to show our hobbies.
 
 ## Features
 
-- Import a HTML file and watch it magically convert to Markdown
+- User profile
+- Categories
 
-> The overriding design goal for Markdown's
+> Show our capibilities of organization
+> Developing our first web-app
 
 ## Tech
 
@@ -39,6 +41,7 @@ Factoria f5 - Gentis
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
+   [HTML]: <https://developer.mozilla.org/es/docs/Web/HTML>
    [node.js]: <http://nodejs.org>
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
    [jQuery]: <http://jquery.com>
