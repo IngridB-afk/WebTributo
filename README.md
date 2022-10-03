@@ -27,9 +27,9 @@ WebTributo uses a number of open source projects to work properly:
 
 WebTributo uses this as reference:
 
-[Bootsrap Navbar]
-[Bootstrap Carousel]
-[8 Bit Dragon Font]
+- [Bootsrap Navbar]
+- [Bootstrap Carousel]
+- [8 Bit Dragon Font]
 
 ## Installation
 
