@@ -1,3 +1,11 @@
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+h3 {
+  font-family: eightBit;
+}
+
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
