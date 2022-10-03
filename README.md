@@ -23,9 +23,17 @@ WebTributo uses a number of open source projects to work properly:
 - [node.js]
 - [jQuery].
 
+## Resources
+
+WebTributo uses this as reference:
+
+[Bootsrap Navbar]
+[Bootstrap Carousel]
+[8 Bit Dragon Font]
+
 ## Installation
 
-WebTributo uses Sass requires [Node.js](https://nodejs.org/) v10+ to run.
+WebTributo uses Sass requires [Node.js](https://nodejs.org/) v10+ to install.
 
 To install Sass:
 
@@ -33,9 +41,17 @@ To install Sass:
 npm install -g sass
 ```
 
+To compile scss files:
+
+```
+sass --watch css/
+```
+
 ## License
 
 Factoria f5 - Gentis
+
+Images from Steam
 
 **Free Software, Hell Yeah!**
 
@@ -46,3 +62,7 @@ Factoria f5 - Gentis
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
    [jQuery]: <http://jquery.com>
    [Sass]: <https://sass-lang.com/install>
+   
+   [Bootsrap Navbar]: <https://getbootstrap.com/docs/5.0/components/carousel/>
+   [Bootstrap Carousel]: <https://getbootstrap.com/docs/5.0/components/navbar/>
+   [8 Bit Dragon Font]: <https://www.fontspace.com/eight-bit-dragon-font-f30428>
