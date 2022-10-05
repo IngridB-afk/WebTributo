@@ -15,7 +15,8 @@ $grid-breakpoints: (
   body {
     background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/EberthDev/media/img/background2.jpg");
     background-size: cover;
-    background-position: -90px 10px;
+    
+    
 
     .nav {
       display: flex;
@@ -31,8 +32,9 @@ $grid-breakpoints: (
       position: relative;
 
       .place {
+        margin-top: 10%;
         width: 80vw;
-        height: 50vh;
+        height: 77vh;
         background: rgba(255, 255, 255, 0.6);
         border-radius: 20px;
         display: flex;
@@ -41,12 +43,15 @@ $grid-breakpoints: (
         align-content: center;
         position: relative;
         @media (min-width:1200px){
-          height: 70vh;
+          height: 65vh;
+          width: 60vw;
+          margin-top: 5%;
         }
 
         .form-control {
           background-color: $primary-color;
           position: relative;
+          
         }
 
         .login {
