@@ -1,3 +1,9 @@
-
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+h3 {
+  font-family: eightBit;
+}
 
 /*# sourceMappingURL=detail.css.map */
