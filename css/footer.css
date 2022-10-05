@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0C1115;
+  opacity: 0.5;
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+@media (min-width: 1200px) {
+  .container {
+    font-size: 30px;
+  }
+}
+.container .word {
+  display: flex;
+  justify-content: space-around;
+}
+.container .word .words {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .word .words img {
+  width: 5px;
+  height: 5 px;
+}
+.container .word .imgsocials {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.container .copyright2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

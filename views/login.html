@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="adrian.sunye">
     <link rel="icon" href="../../../../favicon.ico">
     <title>Web Tributo - Login</title>
@@ -16,50 +16,57 @@
     <link href="../css/login.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <!-- <img src="../media/img/background-login.jpg" class="img-background"> -->
-
+<body cla>
     <main role="main" class="container">
         <div class="nav">
             <h1>LOGO</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
         </div>
 
 
 
-        <div class="row mt-5">
-            <div class="col-xl-6">
-                <div class="sb-3">
+        <div class="row-sm-6  row" >
+            <div class="col-md-6 place">
+                <h2>Login</h2>                
+                <div class="mb-3">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
-                </div>
-                <br>
-                <div class="sb-3">
+                </div>                
+                <div class="mb-3">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Password">
-                </div>
+                </div>               
+                <button type="button" class="btn btn-secondary btn-lg login">Login</button>
                 <br>
-                <button type="button" class="btn btn-secondary btn-lg">Login</button>
-                <br> <br>
                 <div class="remember">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-check2-square" viewBox="0 0 16 16">
-                        <path
-                            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
-                        <path
-                            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
-                    </svg>
-                    <h6>Remember me</h6>
+                    <div class="remember-check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check2-square" viewBox="0 0 16 16">
+                            <path
+                                d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+                            <path
+                                d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                        </svg>
+                        <h6>Remember me</h6>
+                    </div>
                     <h6>Need help?</h6>
                 </div>
-                <br>
+                
                 <h6>Don't subscribe? Subscribe now</h6>
-                <br>
-                <button type="button" class="btn btn-secondary btn-lg signup">Sign up</button>
+                
+                <button type="button" class="btn btn-secondary btn-xl signup">Sign up</button>
             </div>
         </div>
+        <div class="row-sm-6">
+            <iframe src="footer.html" class="row framefooter"></iframe>
+        </div>
+       
 
     </main><!-- /.container -->
+
+    
 
 
     <!-- Bootstrap core JavaScript

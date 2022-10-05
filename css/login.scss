@@ -1,78 +1,150 @@
-// .row{
-//     background-color: rgb(191, 207, 207);
-// }
-// body {
-//     background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/71057a3a6ae68fdbb65bfd369b61c09bab87b376/media/img/background-login.jpg")
-//     ;
-    
-// }
-// .form-control{
-//     background-color: black;
+$primary-color: #0C1115;
+$secondary-color: #C42177;
+$thirdly-color: #ffffff;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// @media (min-width:300px) {
+  body {
+    background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/EberthDev/media/img/background2.jpg");
+    background-size: cover;
+    background-position: -90px 10px;
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      color: $thirdly-color;
+    }
+
+    .row {
+      display: flex;
+      justify-content: center;
+      
+      position: relative;
+
+      .place {
+        width: 80vw;
+        height: 50vh;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        position: relative;
+        @media (min-width:1200px){
+          height: 70vh;
+        }
+
+        .form-control {
+          background-color: $primary-color;
+          position: relative;
+        }
+
+        .login {
+          background-color: $secondary-color;
+          position: relative;
+        }
+
+        .remember {
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+
+          .remember-check {
+            display: flex;  
+            justify-content: space-evenly;          
+            width: 35vw;
+            @media (min-width:1200px){
+                width: 12vw;                         
+            }
+          }
+
+          h6 {
+            text-align: center;
+            position: relative;
+          }
+
+        }
+
+        .signup {
+          width: fit-content;
+          position: relative;
+          align-self: center;
+          background-color: $secondary-color;
+        }
+      }
+    }
+
+  }
 // }
 
-body {
+.framefooter{  
+  color: $thirdly-color;
+  width: 100%;
+  @media (min-width:1200px){
+   font-size: 20px;                        
+}
+ 
+}
 
-    background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/71057a3a6ae68fdbb65bfd369b61c09bab87b376/media/img/background-login.jpg")
-      ;
-      /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); */
-      background-size: cover;
-      background-position: 50px 50px;    
-      
-      /* background-position: center right; */
-      
-  
-  }
-  /* .img-background{
-    max-width: 100vw;
-    min-height: 100vh;
-    position: absolute;
-    
-  } */
-  .nav{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    color: #FFFFFF;
-    
-  }
-  
-  .btn {
-    background-color: #C42177;
-    position: relative;
-  }
-  
-  .form-control {
-    background-color: #0C1115;
-    position: relative;
-  }
-  .row{
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .col-xl-6 {
-    width: 80vw;
-    height: 60vh;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-  }
-  .remember{
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-  }
-  h6{
-    text-align: center;
-    position: relative;
-  }
-  .signup{
-    width: fit-content;
-    position: relative;
-    align-self: center;
-  }
+
+
+
+// @media (min-width:500px) {
+
+//   .place {
+//     height: 60vh;
+//   }
+// }
+
+// @media (min-width:800px) {
+//   .place {
+//     height: 60vh;
+//   }
+// }
+
+// @media (min-width:1200px) {
+//   body {
+//     .row {
+//       .place {
+//         height: 60vh;
+//       }
+//     }
+//   }
+
+// }
+
+// @media (min-width:1500px) {
+//   .place {
+//     height: 60vh;
+//   }
+// }
+
+
+
+
+
+// @media (min-width:1436px) {
+//   .col-xl-6 {     
+//     width: 10vw;
+//     height: 100vh;
+// }
+// }
+
+
+
+// @include media-breakpoint-down(md) {
+//   .col-xl-6 {      
+//     width: 100vw;
+//     height: 6vh;
+//   }
+// }

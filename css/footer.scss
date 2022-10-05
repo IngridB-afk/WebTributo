@@ -1,0 +1,42 @@
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0C1115;   
+      
+    opacity: 0.5;
+    font-size: 10px; 
+    color: #ffffff;
+    opacity: 0.5;
+    @media (min-width:1200px){
+        font-size: 30px;                        
+     }
+    .word{
+        display: flex;
+        justify-content: space-around;
+        .words{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            img{
+                width: 5px;
+                height: 5
+                px;
+            }
+        }
+        .imgsocials{
+            display: flex;
+            align-items: center;
+            gap: 5%;
+
+            
+        }
+    }
+    .copyright2{
+        display: flex;        
+        justify-content: center;
+    }
+    
+}

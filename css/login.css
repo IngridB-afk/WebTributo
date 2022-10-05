@@ -1,68 +1,77 @@
 body {
-  background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/71057a3a6ae68fdbb65bfd369b61c09bab87b376/media/img/background-login.jpg") ;
-  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); */
+  background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/EberthDev/media/img/background2.jpg");
   background-size: cover;
-  background-position: 50px 50px;
-  
-  /* background-position: center right; */
+  background-position: -90px 10px;
 }
-
-/* .img-background{
-  max-width: 100vw;
-  min-height: 100vh;
-  position: absolute;
-
-} */
-.nav {
+body .nav {
   display: flex;
   justify-content: space-between;
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-.btn {
-  background-color: #C42177;
-  position: relative;
-}
-
-.form-control {
-  background-color: #0C1115;
-  position: relative;
-}
-
-.row {
+body .row {
   display: flex;
   justify-content: center;
   position: relative;
 }
-
-.col-xl-6 {
+body .row .place {
   width: 80vw;
-  height: 60vh;
+  height: 50vh;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: center;
   position: relative;
 }
-
-.remember {
-  display: flex;
-  justify-content: space-evenly;
+@media (min-width: 1200px) {
+  body .row .place {
+    height: 70vh;
+  }
+}
+body .row .place .form-control {
+  background-color: #0C1115;
   position: relative;
 }
-
-h6 {
+body .row .place .login {
+  background-color: #C42177;
+  position: relative;
+}
+body .row .place .remember {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+body .row .place .remember .remember-check {
+  display: flex;
+  justify-content: space-evenly;
+  width: 35vw;
+}
+@media (min-width: 1200px) {
+  body .row .place .remember .remember-check {
+    width: 12vw;
+  }
+}
+body .row .place .remember h6 {
   text-align: center;
   position: relative;
 }
-
-.signup {
+body .row .place .signup {
   width: fit-content;
   position: relative;
   align-self: center;
+  background-color: #C42177;
+}
+
+.framefooter {
+  color: #ffffff;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .framefooter {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=login.css.map */
