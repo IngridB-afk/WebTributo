@@ -7,7 +7,7 @@ h3 {
 }
 
 .container-fluid {
-  background: #715BC2;
+  background: #0C1115;
 }
 
 h1 {
@@ -38,7 +38,7 @@ p {
   line-height: 1.6;
   padding: 2%;
 }
-@media (min-widht: 475px) {
+@media (max-width: 900px) {
   .contenedor-about-us .descripcion-about-us {
     width: 100%;
   }
@@ -51,7 +51,7 @@ p {
   /*  float: left; */
   /*  justify-content: center; */
 }
-@media (min-widht: 475px) {
+@media (max-width: 900px) {
   .contenedor-about-us .imagen-about-us {
     width: 100%;
   }
