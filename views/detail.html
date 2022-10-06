@@ -7,7 +7,7 @@
     <meta name="author" content="adrian.sunye">
     <link rel="icon" href="../../../../favicon.ico">
     <title>Web Tributo - Profile</title>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Place your stylesheet here-->
@@ -16,12 +16,12 @@
     <link href="../css/detail.scss" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body  style="background-color:#0C1115">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#" >Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,16 +53,224 @@
     </div>
 </nav>
 
-    <main role="main" class="container">
+    <main role="main" class="container" style="background-color:aliceblue">
 
         <div class="row mt-5">
-            <div class="col-xl-6">
-                <h1>Some text</h1>
+            <div class="gamepage-portada">
+                <img src="/media/img/Elden-Ring-Portada.webp" Style="filter:blur(5px); width:100%; height: 300px; 
+                          background-position: center; background-repeat: no-repeat; background-size: cover;">
             </div> 
             <div class="col-xl-6">
-                <h1>More text</h1>
+                <div class="gamepage-header">
+                    <img src="/media/img/eldenring.jpg" alt="eldenring">
+                </div>
+            </div> 
+            <div class="col-xl-6">
+                <div class="gamepage-header-tittle">
+                    <h1>Elden Ring</h1>
+                </div>
+            </div>
+            <div class="col-xl-12">
+                <div class="gamepage-header-info">
+                    <h2 style="text-align:center;">La Orden Dorada está rota.</h2>
+                    <p>
+                        Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.<br>
+                        En las Tierras Intermedias gobernadas por la Reina Márika, la Eterna, el Círculo de Elden, origen del Árbol Áureo, ha sido destruido.<br>
+                        Los descendientes de Márika, todos semidioses, reclamaron los fragmentos del Círculo de Elden conocidos como Grandes Runas. Fue entonces 
+                        cuando la demencial corrupción de su renovada fuerza provocó una guerra: la Devastación.<br>
+                        Una guerra que supuso el abandono de la Voluntad Mayor. Y ahora, la gracia que nos guía recaerá sobre el Sinluz desdeñado por la gracia del oro y exiliado
+                        de las Tierras Intermedias. Tú que has muerto, pero vives, con tu gracia tiempo ha perdida, recorre la senda hacia las Tierras Intermedias más allá del 
+                        neblinoso mar para postrarte ante el Círculo de Elden.<br><br>
+                        
+                        Y conviértete en el señor del Círculo.
+                    </p>
+                </div>
+            </div>
+            <section class="characters">
+                <h2 class="pj">Personajes</h2>
+
+                <div class="col-xl-6">
+                  <div id="carouselcharacters" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/media/img/elden-ring-character-hero-full-new.webp" class="d-block" alt="heroe">
+                        <h3 class="heroe">Héroe</h3>
+                        <p>Un héroe fiel, cómodo empuñando un hacha de guerra.<br>
+                           Descendiente de un líder de Tierra Baldía.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-samourai-full.webp" class="d-block" alt="samurai">
+                        <h3 class="samurai">Samurái</h3>
+                        <p>Un hábil luchador de los lejanos territorios de Cañaveral.<br>
+                           Diestro con catanas y arcos largos.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-wretch-full.webp" class="d-block" alt="miserable">
+                        <h3 class="miserable">Miserable</h3>
+                          <p>Un pobre tonto sin próposito en la vida, desnudo como el día en que nació.<br>
+                             Solo posee un garrote.</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-prophet-full.webp" class="d-block" alt="profeta">
+                        <h3 class="miserable">Profeta</h3>
+                        <p>Un vidente marginado por sus profecías catastrofistas.<br>
+                           Experimentado en encantamientos de curación.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-confessor-full.webp" class="d-block" alt="confesor">
+                        <h3 class="miserable">Confesor</h3>
+                        <p>Un espía eclesiástico habilidoso en las operaciones clandestinas.<br>
+                           Diestro con la espada y los encantamientos.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-astrologer-full.webp" class="d-block" alt="astrologo">
+                        <h3 class="miserable">Astrólogo</h3>
+                        <p>Un erudito que lee el destino en las estrellas.<br>
+                           Seguidor de la escuela de hechicería de piedras refulgentes.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-bandit-full.webp" class="d-block" alt="bandido">
+                        <h3 class="miserable">Bandido</h3>
+                        <p>Un peligroso bandido que ataca los puntos débiles.<br>
+                           Destaca en el combate a distancia con arcos.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-prisoner-full.webp" class="d-block" alt="prisionero">
+                        <h3 class="miserable">Prisionero</h3>
+                        <p>Prisionero encasquetado en una máscara de hierro.<br>
+                           Al haber pertenecido a la élite cuando era libre, conoce la hechicería de piedras<br>
+                           refulgentes.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-vagabond-full.webp" class="d-block" alt="vagante">
+                        <h3 class="miserable">Vagante</h3>
+                        <p>Un caballero exiliado de su tierra natal y obligado a deambular.<br>
+                           Robusto y armado.
+                        </p>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/img/elden-ring-character-warrior-full-new.webp" class="d-block" alt="guerrero">
+                        <h3 class="miserable">Guerrero</h3>
+                        <p>Un guerrero de una tribu nómada que empuña armas en ambas manos.<br>
+                           Técnica excepcional.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+            </section>
+            <div class="col-xl-12">
+                <h2 style="text-align:center;">Los Sinluz de las Tierras Intermedias</h2>
+                <p>La Orden Dorada está rota. A lo largo y ancho de las Tierras Intermedias, semidioses poseedores de fragmentos del Círculo de Elden se enfrentan<br>
+                   y combaten entre las ruinas de un reino otrora perfecto, hoy abandonado por las enseñanzas doradas de la Voluntad Mayor.<br>
+                   Mientras los ecos de la contienda retumban a lo lejos, una figura proscrita se acerca. Antaño, sus antepasados llamaron a las Tierras<br>
+                   Intermedias su hogar, pero la bendita luz de la gracia se perdió para su pueblo y fueron expulsados del reino. Son los Sinluz, y han vuelto<br> 
+                   para reclamar el título de Elden prometido por la leyenda.<br>
+                   Este es el mundo de ELDEN RING. Conviértete en Sinluz y explora las Tierras Intermedias. Cabalgarás por vastas praderas, galoparás por<br>
+                   suaves colinas y ascenderás hasta la cima de rocosos peñascos a lomos de tu efímero corcel para descubrir un mundo rebosante de<br> 
+                   vida y peligros.<br>
+                   En los vastos campos donde comienza tu periplo, criaturas míticas merodean en los páramos, horrores inimaginables acechan en las<br> 
+                   ciénagas y marismas y todo tipo de soldados y guerreros itinerantes esperan dar caza a los desprevenidos. Tímidas criaturas mordisquean<br> 
+                   la dulce hierba o se escabullen entre la maleza.<br>                   
+                   Los pocos habitantes que no han enloquecido o se han vuelto hostiles tratan de sobrevivir cerca de las ciudades en ruinas destruidas por<br> 
+                   la Devastación. Si los ayudas, puede que te ofrezcan las respuestas que buscas. Por encima de todos ellos, asentados en tierras usurpadas<br> 
+                   en las que trampas, secretos y guardianes abundan, los semidioses —señores corrompidos, otrora miembros de una noble familia real—<br> 
+                   regentan sus dominios con el implacable poder otorgado por los fragmentos del Círculo de Elden.
+                </p>
+            </div>
+            <section class="game-images">
+                <div class="row mt-5" style="padding: 15px;">
+                    <div class="col-xl-4">
+                        <div class="image-left">
+                            <img src="/media/img/ELDENRING_05_4K.webp" width="450px">
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="image-midle">
+                            <img src="/media/img/ELDENRING_08_4K.webp" width="450px">
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="right">
+                            <img src="/media/img/ELDENRING_12_4K.webp" width="450px">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="col-xl-12">
+                <p>Las enseñanzas de las gracias perdidas —si las encuentras— te darán pistas para recuperar estos territorios de sus garras mediante la<br> 
+                    espada y hechizos, aunque no es necesario que sigas su camino.<br>
+                    Tú eliges: ¿ansías el poder o buscas la iluminación? Toma tus propias decisiones y moldea a tu personaje en consecuencia.<br>                    
+                    Elige las habilidades que se adapten mejor a tu estilo. Pon en práctica tus dotes de sigilo para evitar los peligros o pillar desprevenidos<br> 
+                    a los enemigos. Aprovecha el entorno, las condiciones climáticas y la hora del día para obtener ventaja. Aprende el arte del combate, en el<br> 
+                    que deberás leer las intenciones de tu enemigo y un movimiento elusivo bien calculado podrá suponer la diferencia entre la vida y la<br> 
+                    muerte. Monta a lomos de tu corcel en combates contra mercenarios y derríbalos de sus monturas. Domina los hechizos arcanos de los<br> 
+                    maestros que lograron sobrevivir entre las ruinas de la guerra. Invoca a espíritus familiares para girar las tornas a tu favor o pide a tus<br> 
+                    compañeros Sinluz que luchen a tu lado y te ayuden en tu aventura. O si lo prefieres, adéntrate en la compleja y sangrienta historia de la<br> 
+                    Devastación y descubre los secretos olvidados de los semidioses y su estirpe. Todos estos caminos y muchos más son posibles.<br>                    
+                    En última instancia, tu viaje quedará definido por tus propios anhelos. Cuanto más ambiciosos sean tus objetivos, más grande será el<br> 
+                    desafío. Si decides reclamar las Tierras Intermedias como tuyas, deberás luchar, por supuesto.<br><br>                    
+                    Y por supuesto, podrías morir.<br><br>                    
+                    Pero regresarás para luchar de nuevo.<br><br>                    
+                    Porque ¿de qué otra forma iba a nacer un campeón o un señor?
+                </p>
+            </div>
+            <div class="plataformas">
+                <div class="col-xl-12">
+                    <h3 style="text-align:center;">Plataformas</h3>
+                    <i class="fab fa-playstation">PS4</i>
+                    <i class="fas fa-laptop">PC</i>
+                    <i class="fab fa-xbox">X-BOX ONE</i>
+                    <i class="fab fa-playstation">PS5</i>
+                    <i class="fab fa-xbox">X-BOX SERIES X|S</i>
+                </div>
+            </div>
+            <div class="caracteristicas">
+                <div class="col-xl-7">
+                    <h3 style="text-align:center;">Características Principales</h3>
+                      <h4>Un nuevo mundo de fantasía</h4>
+                      <p>Recorre las Tierras Intermedias, un nuevo mundo de fantasía ideado por Hidetaka<br> 
+                         Miyazaki, creador de la exitosa serie de videojuegos DARK SOULS, y por George R. R. Martin,<br> 
+                         autor de Canción de hielo y fuego, la serie de fantasía superventas según<br> 
+                         The New York Times. 
+                         Desvela los misterios del poder del Círculo de Elden. Enfréntate a criaturas temibles y<br> 
+                         conoce a adversarios con pasados tumultuosos y personajes con sus propias<br> 
+                         motivaciones para ayudarte a avanzar o complicarte las cosas.                        
+                      </p>
+                      <h4>Explora el mundo de las Tierras Intermedias</h4>
+                      <p>ELDEN RING ofrece vastos parajes de fantasía y sombrías e intricadas mazmorras que<br> 
+                        están conectadas de forma fluida y sin interrupciones.<br>
+                        Recorre este impresionante mundo a pie o a caballo, en solitario u online con otros<br> 
+                        jugadores. Sumérgete en las verdes llanuras, en los pantanos agobiantes, en las<br> 
+                        montañas tortuosas, en unos castillos que no auguran nada bueno y en otros parajes<br> 
+                        majestuosos. Todo ello, a una escala nunca antes vista en un juego de FromSoftware. 
+                      </p>
+                      <h4>Un sistema de juego que definirá el género</h4>
+                      <p>Crea a tu propio personaje en este refinado juego de rol y acción de FromSoftware y<br> 
+                        define tu estilo de juego a partir del amplio abanico de armas, poderes mágicos y<br> 
+                        habilidades que encontrarás a lo largo y ancho del mundo.<br>
+                        Ve de cabeza al combate, usa el sigilo para acabar con los enemigos uno a uno<br> 
+                        o pide ayuda a tus aliados. Tendrás muchas opciones a tu disposición, tanto a la hora<br> 
+                        de explorar como de saltar al combate. 
+                      </p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="play-eldenring">
+                        <iframe width="420" height="315"
+                        src="https://www.youtube.com/watch?v=JldMvQMO_5Uautoplay=1&mute=1">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
+
 
     </main><!-- /.container -->
 
