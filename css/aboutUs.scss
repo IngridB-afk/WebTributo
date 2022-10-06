@@ -12,7 +12,9 @@ h1 {
 }
 
 h2 {
+    color: #C42177;
     padding: 3%;
+    font-family: eightBit;
 }
 
 p {
@@ -32,16 +34,28 @@ p {
         float: right;
         line-height: 1.6;
         padding: 2%;
-        @media (min-widht:475px){
+        @media (max-width:900px){
             width: 100%;
         }
     }
+
+        .caja-botones-descripcion-about-us{
+            text-align: center;
+
+        }
+
+            .boton-descripcion{
+                border-radius: 40px 40px 40px 40px;
+                border-color: #f7fafd;
+                background: #C42177;
+                color: #ffffff;
+            }
 
     .imagen-about-us {
         background: #DECBFD;
         width: 50%;
         display: flex;
-        @media (min-widht:475px){
+        @media (max-width:900px){
             width: 100%;
         }
         /*     height: 100%; */
@@ -58,7 +72,7 @@ p {
 .contenedor-team {
     background: #f7fafd;
     display: flex;
-    padding: 2em;
+    // padding: 2em;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -100,12 +114,12 @@ p {
 }
 
 .boton-team {
-    border-radius: 55px 55px 55px 55px;
+    border-radius: 40px 40px 40px 40px;
     border-color: #f7fafd;
     background: #C42177;
-    font-size: x-large;
     color: #ffffff;
     padding: .4em;
+    font-weight: bold;
 }
 
 .redes {
@@ -116,16 +130,3 @@ p {
     ;
 }
 
-@media (min-widht:475px){
-    .contenedor-about-us{
-        flex-wrap: wrap;
-    }
-
-    .descripcion-about-us {
-        width: 100%;
-    }
-
-    .imagen-about-us {
-        width:100%;
-    }
-} 
