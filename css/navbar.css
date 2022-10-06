@@ -1,3 +1,17 @@
+<<<<<<< HEAD
 
+=======
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+h3 {
+  font-family: eightBit;
+}
+
+.navbar {
+  background-color: #715BC2;
+}
+>>>>>>> 787d5cb1e9f4c8f74571e799d487275fe70d5653
 
 /*# sourceMappingURL=navbar.css.map */
