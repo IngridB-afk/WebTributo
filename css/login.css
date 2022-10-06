@@ -1,6 +1,13 @@
-<<<<<<< HEAD
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+h3 {
+  font-family: eightBit;
+}
+
 body {
-  background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/EberthDev/media/img/background2.jpg");
+  background-image: url(../media/img/background2.jpg);
   background-size: cover;
 }
 body .nav {
@@ -75,14 +82,6 @@ body .row .place .signup {
   .framefooter {
     font-size: 20px;
   }
-=======
-@font-face {
-  font-family: eightBit;
-  src: url(../media/fonts/EightBitDragon-anqx.ttf);
-}
-h3 {
-  font-family: eightBit;
->>>>>>> 787d5cb1e9f4c8f74571e799d487275fe70d5653
 }
 
 /*# sourceMappingURL=login.css.map */
