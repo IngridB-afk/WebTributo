@@ -43,6 +43,7 @@ body .row .place {
 body .row .place .form-control {
   background-color: #0C1115;
   position: relative;
+  color: #ffffff;
 }
 body .row .place .login {
   background-color: #C42177;
@@ -76,7 +77,7 @@ body .row .place .signup {
 
 .framefooter {
   color: #ffffff;
-  width: 100%;
+  width: 90vw;
 }
 @media (min-width: 1200px) {
   .framefooter {

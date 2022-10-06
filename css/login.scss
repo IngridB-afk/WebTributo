@@ -1,107 +1,120 @@
 @import "./global.scss";
 
-$primary-color: #0C1115;
-$secondary-color: #C42177;
-$thirdly-color: #ffffff;
+// $primary-color: #0C1115;
+// $secondary-color: #C42177;
+// $thirdly-color: #ffffff;
+// $bold: #0C1115;
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
+// $grid-breakpoints: (
+//     xs: 0,
+//     sm: 576px,
+//     md: 768px,
+//     lg: 992px,
+//     xl: 1200px,
+//     xxl: 1400px
+// );
 
 // @media (min-width:300px) {
-  body {
+body {
     // background-image: url("https://raw.githubusercontent.com/adriansunye/WebTributo/EberthDev/media/img/background2.jpg");
     background-image: url(../media/img/background2.jpg);
     background-size: cover;
     
-    
+
+    @if($bold =='true') {
+        font-weight: bolder;
+    }
+
+
 
     .nav {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      color: $thirdly-color;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        color: $thirdly-color;
     }
 
     .row {
-      display: flex;
-      justify-content: center;
-      
-      position: relative;
-
-      .place {
-        margin-top: 10%;
-        width: 80vw;
-        height: 77vh;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-content: center;
+        justify-content: center;
+
         position: relative;
-        @media (min-width:1200px){
-          height: 65vh;
-          width: 60vw;
-          margin-top: 5%;
-        }
 
-        .form-control {
-          background-color: $primary-color;
-          position: relative;
-          
-        }
-
-        .login {
-          background-color: $secondary-color;
-          position: relative;
-        }
-
-        .remember {
-          display: flex;
-          justify-content: space-between;
-          position: relative;
-
-          .remember-check {
-            display: flex;  
-            justify-content: space-evenly;          
-            width: 35vw;
-            @media (min-width:1200px){
-                width: 12vw;                         
-            }
-          }
-
-          h6 {
-            text-align: center;
+        .place {
+            margin-top: 10%;
+            width: 80vw;
+            height: 77vh;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
             position: relative;
-          }
+            // font-family: eightBit;
+            
 
-        }
+            @media (min-width:1200px) {
+                height: 65vh;
+                width: 60vw;
+                margin-top: 5%;
+            }
 
-        .signup {
-          width: fit-content;
-          position: relative;
-          align-self: center;
-          background-color: $secondary-color;
+            .form-control {
+                background-color: $primary-color;
+                position: relative;
+                color: $thirdly-color;
+
+            }
+
+            .login {
+                background-color: $secondary-color;
+                position: relative;
+            }
+
+            .remember {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+
+                .remember-check {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 35vw;
+
+                    @media (min-width:1200px) {
+                        width: 12vw;
+                    }
+                }
+
+                h6 {
+                    text-align: center;
+                    position: relative;
+                }
+
+            }
+
+            .signup {
+                width: fit-content;
+                position: relative;
+                align-self: center;
+                background-color: $secondary-color;
+            }
         }
-      }
     }
 
-  }
+}
+
 // }
 
-.framefooter{  
-  color: $thirdly-color;
-  width: 100%;
-  @media (min-width:1200px){
-   font-size: 20px;                        
-}
- 
+.framefooter {
+    color: $thirdly-color;
+    width: 90vw;
+
+    @media (min-width:1200px) {
+        font-size: 20px;
+    }
+
 }
 
 
