@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"navbar.css"}
-=======
 {"version":3,"sourceRoot":"","sources":["global.scss","navbar.scss"],"names":[],"mappings":"AAEA;EACE;EACA;;AAGF;EACE;;;ACNF;EACI,kBDHY","file":"navbar.css"}
->>>>>>> 787d5cb1e9f4c8f74571e799d487275fe70d5653
