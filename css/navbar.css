@@ -1,3 +1,5 @@
+/* Element First Media Queries
+========================================================= */
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -8,6 +10,4 @@ h3 {
 
 .navbar {
   background-color: #715BC2;
-}
-
-/*# sourceMappingURL=navbar.css.map */
+}/*# sourceMappingURL=navbar.css.map */
