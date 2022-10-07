@@ -1,43 +1,53 @@
-.container{
-    
+
+@import 'global';
+
+.footer {
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #0C1115; 
-     
-      
-    opacity: 0.5;
-    font-size: 10px; 
-    color: #ffffff;
-    opacity: 0.5;
-    @media (min-width:1200px){
-        font-size: 30px;                        
-     }
-    .word{
+    justify-content: center;    
+    bottom: 0 !important;    
+    font-size: 9px;
+    color: $thirdly-color;
+    opacity: 0.6;
+    position: absolute;
+    top: 5%;
+    bottom: 0;
+    width: 99vw;
+
+    .word {
         display: flex;
         justify-content: space-around;
-        .words{
+
+        .words {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
 
-            img{
-                width: 5px;
-                height: 5
-                px;
+            img {
+                width: 10px;
+                height: 10px;
             }
         }
-        .imgsocials{
+
+        .imgsocials {
             display: flex;
             align-items: center;
             gap: 5%;
-
-            
         }
     }
-    .copyright2{
-        display: flex;        
+
+    .copyright2 {
+        display: flex;
         justify-content: center;
     }
-    
+
+}
+
+@media (min-width:1200px) {
+
+    .footer {
+
+        font-size: 12px;
+    }
 }

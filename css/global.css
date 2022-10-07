@@ -6,4 +6,7 @@ h3 {
   font-family: eightBit;
 }
 
-/*# sourceMappingURL=global.css.map */
+a {
+  text-decoration: none;
+  outline: none;
+}/*# sourceMappingURL=global.css.map */

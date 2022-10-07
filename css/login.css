@@ -6,216 +6,18 @@ h3 {
   font-family: eightBit;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+}
+
 body {
   background-image: url(../media/img/background2.jpg);
   background-size: cover;
   display: flex;
-  align-items: center;
-  position: relative;
-}
-body .animation-container {
-  display: block;
-  position: relative;
-  width: 800px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-body .animation-container .lightning-container {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: flex;
-  transform: translateY(-50%);
-}
-body .animation-container .lightning-container .lightning {
-  position: absolute;
-  display: block;
-  height: 12px;
-  width: 12px;
-  border-radius: 12px;
-  transform-origin: 6px 6px;
-  animation-name: woosh;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  animation-direction: alternate;
-}
-body .animation-container .lightning-container .lightning.white {
-  background-color: white;
-  box-shadow: 0px 50px 50px 0px rgba(255, 255, 255, 0.3);
-}
-body .animation-container .lightning-container .lightning.red {
-  background-color: #fc7171;
-  box-shadow: 0px 50px 50px 0px rgba(252, 113, 113, 0.3);
-  animation-delay: 0.2s;
-}
-body .animation-container .boom-container {
-  position: absolute;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  align-items: center;
-  transform: translateY(-50%);
-  left: 200px;
-  top: -145px;
-}
-body .animation-container .boom-container .shape {
-  display: inline-block;
-  position: relative;
-  opacity: 0;
-  transform-origin: center center;
-}
-body .animation-container .boom-container .shape.triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  transform-origin: 50% 80%;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  margin-left: -15px;
-  border-width: 0 2.5px 5px 2.5px;
-  border-color: transparent transparent #42e599 transparent;
-  animation-name: boom-triangle;
-}
-body .animation-container .boom-container .shape.triangle.big {
-  margin-left: -25px;
-  border-width: 0 5px 10px 5px;
-  border-color: transparent transparent #fade28 transparent;
-  animation-name: boom-triangle-big;
-}
-body .animation-container .boom-container .shape.disc {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  background-color: #d15ff4;
-  animation-name: boom-disc;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-}
-body .animation-container .boom-container .shape.circle {
-  width: 20px;
-  height: 20px;
-  animation-name: boom-circle;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  border-radius: 100%;
-  margin-left: -30px;
-}
-body .animation-container .boom-container .shape.circle.white {
-  border: 1px solid white;
-}
-body .animation-container .boom-container .shape.circle.big {
-  width: 40px;
-  height: 40px;
-  margin-left: 0px;
-}
-body .animation-container .boom-container .shape.circle.big.white {
-  border: 2px solid white;
-}
-body .animation-container .boom-container .shape:after {
-  background-color: rgba(178, 215, 232, 0.2);
-}
-body .animation-container .boom-container .shape.triangle, body .animation-container .boom-container .shape.circle, body .animation-container .boom-container .shape.circle.big, body .animation-container .boom-container .shape.disc {
-  animation-delay: 0.38s;
-  animation-duration: 3s;
-}
-body .animation-container .boom-container .shape.circle {
-  animation-delay: 0.6s;
-}
-body .animation-container .boom-container.second {
-  left: 485px;
-  top: 155px;
-}
-body .animation-container .boom-container.second .shape.triangle, body .animation-container .boom-container.second .shape.circle, body .animation-container .boom-container.second .shape.circle.big, body .animation-container .boom-container.second .shape.disc {
-  animation-delay: 1.9s;
-}
-body .animation-container .boom-container.second .shape.circle {
-  animation-delay: 2.15s;
-}
-@keyframes woosh {
-  0% {
-    width: 12px;
-    transform: translate(0px, 0px) rotate(-35deg);
-  }
-  15% {
-    width: 50px;
-  }
-  30% {
-    width: 12px;
-    transform: translate(214px, -150px) rotate(-35deg);
-  }
-  30.1% {
-    transform: translate(214px, -150px) rotate(46deg);
-  }
-  50% {
-    width: 110px;
-  }
-  70% {
-    width: 12px;
-    transform: translate(500px, 150px) rotate(46deg);
-  }
-  70.1% {
-    transform: translate(500px, 150px) rotate(-37deg);
-  }
-  85% {
-    width: 50px;
-  }
-  100% {
-    width: 12px;
-    transform: translate(700px, 0) rotate(-37deg);
-  }
-}
-@keyframes boom-circle {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-    transform: scale(3);
-  }
-}
-@keyframes boom-triangle-big {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-    transform: scale(2.5) translate(50px, -50px) rotate(360deg);
-  }
-}
-@keyframes boom-triangle {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-    transform: scale(3) translate(20px, 40px) rotate(360deg);
-  }
-}
-@keyframes boom-disc {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-    transform: scale(2) translate(-70px, -30px);
-  }
+  flex-direction: column;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 body .nav {
   display: flex;
@@ -223,13 +25,13 @@ body .nav {
   position: relative;
   color: #ffffff;
 }
-body .row {
+body .lightback {
   display: flex;
   justify-content: center;
   position: relative;
 }
-body .row .place {
-  margin-top: 10%;
+body .lightback .place {
+  margin-top: 5%;
   width: 80vw;
   height: 77vh;
   background: rgba(255, 255, 255, 0.6);
@@ -241,41 +43,43 @@ body .row .place {
   position: relative;
 }
 @media (min-width: 1200px) {
-  body .row .place {
+  body .lightback .place {
     height: 65vh;
     width: 60vw;
     margin-top: 5%;
   }
 }
-body .row .place .form-control {
+body .lightback .place .form-control {
   background-color: #0C1115;
   position: relative;
   color: #ffffff;
 }
-body .row .place .login {
+body .lightback .place .login {
   background-color: #C42177;
   position: relative;
 }
-body .row .place .remember {
+body .lightback .place .remember {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-body .row .place .remember .remember-check {
+body .lightback .place .remember .remember-check {
   display: flex;
   justify-content: space-evenly;
   width: 35vw;
 }
 @media (min-width: 1200px) {
-  body .row .place .remember .remember-check {
+  body .lightback .place .remember .remember-check {
     width: 12vw;
   }
 }
-body .row .place .remember h6 {
+body .lightback .place .remember h6 {
   text-align: center;
   position: relative;
 }
-body .row .place .signup {
+body .lightback .place .signup {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   align-self: center;
@@ -285,11 +89,10 @@ body .row .place .signup {
 .framefooter {
   color: #ffffff;
   width: 90vw;
+  position: relative;
 }
 @media (min-width: 1200px) {
   .framefooter {
     font-size: 20px;
   }
-}
-
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */

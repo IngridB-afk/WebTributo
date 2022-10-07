@@ -1,39 +1,54 @@
-.container {
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+h3 {
+  font-family: eightBit;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #0C1115;
-  opacity: 0.5;
-  font-size: 10px;
+  bottom: 0 !important;
+  font-size: 9px;
   color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.6;
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  width: 99vw;
 }
-@media (min-width: 1200px) {
-  .container {
-    font-size: 30px;
-  }
-}
-.container .word {
+.footer .word {
   display: flex;
   justify-content: space-around;
 }
-.container .word .words {
+.footer .word .words {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.container .word .words img {
-  width: 5px;
-  height: 5 px;
+.footer .word .words img {
+  width: 10px;
+  height: 10px;
 }
-.container .word .imgsocials {
+.footer .word .imgsocials {
   display: flex;
   align-items: center;
   gap: 5%;
 }
-.container .copyright2 {
+.footer .copyright2 {
   display: flex;
   justify-content: center;
 }
 
-/*# sourceMappingURL=footer.css.map */
+@media (min-width: 1200px) {
+  .footer {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=footer.css.map */
