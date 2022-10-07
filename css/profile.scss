@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.Parte1 {
+    margin-top: 0.8cm;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .col-12 {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+
+        .Avatar {
+            border: 4px solid blueviolet;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+    }
+
+    .Decoracion {
+        align-items: center;
+        width: 80%;
+        border: 2px solid black;
+        margin-bottom: 0.5cm;
+    }
+
+    .container3 {
+        display: none;
+    }
+
+}
+
+.Parte2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .PersonalInfo {
+        width: 100%;
+        height: 30vh;
+        margin-top: 1cm;
+        border: 5px solid palevioletred;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Info {
+            margin: 0.1cm;
+        }
+    }
+
+
+    .FavoriteGames {
+        margin-top: 2cm;
+        width: 100%;
+        height: 42vh;
+        border: 5px solid palevioletred;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .Games {
+            margin: 0.1cm
+        }
+
+        .Title {
+            margin: 0.2cm;
+        }
+
+    }
+
+
+
+    .Parte3 {
+        width: 100%;
+        margin: 2cm;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+
+        .Trophy {
+
+            width: 80%;
+            height: 10vh;
+            border: 3px solid blue;
+        }
+
+        .Control {
+
+            width: 80%;
+            height: 10vh;
+            border: 3px solid blue;
+        }
+
+        .Gift {
+
+            width: 80%;
+            height: 10vh;
+            border: 3px solid blue;
+        }
+
+    }
+}
+
+
+
+.Parte4 {
+    display: none;
+}
+
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blueviolet;
+}
+
+@media (min-width: 768px) and (max-width: 1800px) {
+
+
+    .Parte1 {
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+        width: 100%;
+        display: flex;
+        flex-direction: wrap;
+        justify-content: space-around;
+
+
+
+        .col-12 {
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            justify-content: left;
+
+            .Avatar {
+                border: 4px solid blueviolet;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+
+
+        }
+
+        .container3 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2cm;
+            margin-top: 1cm;
+
+        }
+
+        .Decoracion {
+            display: none;
+        }
+
+    }
+
+    .Parte2 {
+        margin-top: 1cm;
+        margin-bottom: 3cm;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-bottom: 2cm;
+
+
+
+        .PersonalInfo {
+            width: 100%;
+            height: 45vh;
+            border: 5px solid palevioletred;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .Info {
+                margin: 0.1cm;
+            }
+
+        }
+
+
+
+        .FavoriteGames {
+            width: 100%;
+            height: 60vh;
+            border: 5px solid palevioletred;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .Games {
+                margin: 0.1cm
+            }
+
+            .Title {
+                margin: 0.2cm;
+            }
+
+        }
+
+        .Parte3 {
+            width: 100%;
+            border: 4px solid palevioletred;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1cm;
+
+            .Trophy {
+
+                width: 100%;
+                height: 10vh;
+                border-bottom: 5px solid blue;
+            }
+
+            .Control {
+
+                width: 100%;
+                height: 10vh;
+                border-bottom: 5px solid blue;
+            }
+
+            .Gift {
+
+                width: 100%;
+                height: 10vh;
+                border-bottom: 5px solid blue;
+            }
+
+        }
+
+    }
+
+    .Parte4 {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .container-footer {
+        margin-top: 1cm;
+        width: 100%;
+        height: 5vh;
+
+        background-color: brown;
+    }
+}
