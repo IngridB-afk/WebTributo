@@ -8,7 +8,7 @@
     justify-content: center;    
     bottom: 0 !important;    
     font-size: 9px;
-    color: $thirdly-color;
+    color: $primary-color;
     opacity: 0.6;
     position: absolute;
     top: 5%;
@@ -18,6 +18,7 @@
     .word {
         display: flex;
         justify-content: space-around;
+        
 
         .words {
             display: flex;
@@ -27,6 +28,7 @@
             img {
                 width: 10px;
                 height: 10px;
+                filter: invert(0.8) sepia(1) hue-rotate(10deg) saturate(40%);
             }
         }
 
@@ -34,12 +36,14 @@
             display: flex;
             align-items: center;
             gap: 5%;
+            filter: invert(0.8) sepia(1) hue-rotate(10deg) saturate(40%);
         }
     }
 
     .copyright2 {
         display: flex;
         justify-content: center;
+        
     }
 
 }
