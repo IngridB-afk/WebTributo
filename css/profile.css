@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+h3 {
+  font-family: eightBit;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,6 +47,7 @@
 
 .Parte2 {
   width: 100%;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,18 +92,15 @@
 }
 .Parte2 .Parte3 .Trophy {
   width: 80%;
-  height: 10vh;
-  border: 3px solid blue;
+  height: 20vh;
 }
 .Parte2 .Parte3 .Control {
   width: 80%;
-  height: 10vh;
-  border: 3px solid blue;
+  height: 20vh;
 }
 .Parte2 .Parte3 .Gift {
   width: 80%;
-  height: 10vh;
-  border: 3px solid blue;
+  height: 20vh;
 }
 
 .Parte4 {
@@ -139,6 +146,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: eightBit;
     margin-bottom: 2cm;
     margin-top: 1cm;
   }
@@ -193,24 +201,22 @@
   }
   .Parte2 .Parte3 .Trophy {
     width: 100%;
-    height: 10vh;
-    border-bottom: 5px solid blue;
+    height: 20vh;
   }
   .Parte2 .Parte3 .Control {
     width: 100%;
-    height: 10vh;
-    border-bottom: 5px solid blue;
+    height: 20vh;
   }
   .Parte2 .Parte3 .Gift {
     width: 100%;
-    height: 10vh;
-    border-bottom: 5px solid blue;
+    height: 20vh;
   }
   .Parte4 {
     width: 100%;
     height: 40vh;
     display: flex;
     flex-direction: row;
+    font-family: eightBit;
   }
   .container-footer {
     margin-top: 1cm;

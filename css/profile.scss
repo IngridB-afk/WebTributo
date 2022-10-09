@@ -1,7 +1,12 @@
+
+@import "./global.scss";
+
 * {
     box-sizing: border-box;
     margin: 0;
+
 }
+
 
 .Parte1 {
     margin-top: 0.8cm;
@@ -10,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 
     .col-12 {
         width: 100%;
@@ -44,6 +50,7 @@
 
 .Parte2 {
     width: 100%;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,22 +108,22 @@
         .Trophy {
 
             width: 80%;
-            height: 10vh;
-            border: 3px solid blue;
+            height: 20vh;
+           
         }
 
         .Control {
 
             width: 80%;
-            height: 10vh;
-            border: 3px solid blue;
+            height: 20vh;
+            
         }
 
         .Gift {
 
             width: 80%;
-            height: 10vh;
-            border: 3px solid blue;
+            height: 20vh;
+            
         }
 
     }
@@ -143,6 +150,7 @@
 @media (min-width: 768px) and (max-width: 1800px) {
 
 
+
     .Parte1 {
         margin-top: 1cm;
         margin-bottom: 1cm;
@@ -150,8 +158,6 @@
         display: flex;
         flex-direction: wrap;
         justify-content: space-around;
-
-
 
         .col-12 {
             width: 100%;
@@ -177,6 +183,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            font-family: eightBit;
             margin-bottom: 2cm;
             margin-top: 1cm;
 
@@ -238,7 +245,7 @@
 
         .Parte3 {
             width: 100%;
-            border: 4px solid palevioletred;
+            border: 5px solid palevioletred;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -248,22 +255,22 @@
             .Trophy {
 
                 width: 100%;
-                height: 10vh;
-                border-bottom: 5px solid blue;
+                height: 20vh;
+               
             }
 
             .Control {
 
                 width: 100%;
-                height: 10vh;
-                border-bottom: 5px solid blue;
+                height: 20vh;
+                
             }
 
             .Gift {
 
                 width: 100%;
-                height: 10vh;
-                border-bottom: 5px solid blue;
+                height: 20vh;
+               
             }
 
         }
@@ -275,6 +282,7 @@
         height: 40vh;
         display: flex;
         flex-direction: row;
+        font-family: eightBit;
     }
 
 
