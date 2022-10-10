@@ -3,13 +3,13 @@
   font-family: eightBit;
   src: url(/media/fonts/EightBitDragon-anqx.ttf);
 }
-/*secondary color palette*/
+/*primary color palette*/
 body {
   background-color: #0C1115;
 }
 
 .container {
-  background-color: aliceblue;
+  background-color: #ffffff;
 }
 
 /*main image*/
