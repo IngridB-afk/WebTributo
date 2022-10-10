@@ -1,3 +1,5 @@
+/* Element First Media Queries
+========================================================= */
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -22,6 +24,7 @@ body {
 
 h1 {
   font-family: eightBit;
+<<<<<<< HEAD
   font-size: 75px;
 }
 
@@ -53,3 +56,6 @@ p {
 }
 
 /*# sourceMappingURL=detail.css.map */
+=======
+}/*# sourceMappingURL=detail.css.map */
+>>>>>>> adrianDev

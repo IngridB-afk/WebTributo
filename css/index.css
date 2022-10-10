@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+=======
+/* Element First Media Queries
+========================================================= */
+>>>>>>> adrianDev
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -13,11 +18,19 @@ a {
 }
 
 @media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
+  .carousel {
+    margin-left: 5%;
+  }
+  .carousel .carousel-inner .carousel-item > div {
     display: none;
   }
-  .carousel-inner .carousel-item > div:first-child {
+  .carousel .carousel-inner .carousel-item > div:first-child {
     display: block;
+  }
+}
+@media (max-width: 510px) {
+  .carousel {
+    margin-left: 0;
   }
 }
 .carousel-inner .carousel-item.active,
@@ -43,8 +56,105 @@ a {
 }
 
 .carousel-item {
-  font: 100% Helvetica, sans-serif;
+  font: 100% eightBit;
   color: #fff;
 }
+.carousel-item .card-img-overlay {
+  top: 75%;
+}
 
-/*# sourceMappingURL=index.css.map */
+.row-recently-played:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.recently-played {
+  margin-top: -30px;
+}
+.recently-played .recently-played-title {
+  position: absolute;
+  top: 56%;
+}
+@media (min-width: 576px) {
+  .recently-played .recently-played-title {
+    top: 58%;
+  }
+}
+@media (min-width: 768px) {
+  .recently-played .recently-played-title {
+    top: 38%;
+  }
+}
+@media (min-width: 992px) {
+  .recently-played .recently-played-title {
+    top: 42%;
+  }
+}
+@media (min-width: 1200px) {
+  .recently-played .recently-played-title {
+    top: 45%;
+  }
+}
+@media (min-width: 1400px) {
+  .recently-played .recently-played-title {
+    top: 48%;
+  }
+}
+.recently-played .recently-played-items {
+  position: relative;
+  display: flex;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  padding-bottom: 56.25%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.recently-played .recently-played-items .title-caption {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 15px;
+  z-index: 1;
+  width: 80%;
+}
+.recently-played .recently-played-items .title-caption .overflow-wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recently-played .recently-played-items .title-caption .title-caption-p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  width: 80%;
+}
+.recently-played .recently-played-items .score-caption {
+  font-size: 25px;
+  z-index: 1;
+  position: absolute;
+  font-weight: 600;
+  right: 15px;
+  bottom: 15px;
+}
+.recently-played .recently-played-items .caption-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  display: inline-block;
+}
+.recently-played .recently-played-items .caption-background:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(241, 196, 15, 0.5), rgba(0, 0, 0, 0.15));
+}/*# sourceMappingURL=index.css.map */

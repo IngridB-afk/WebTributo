@@ -10,7 +10,7 @@ WebTributo is a web page to show our hobbies.
 - User profile
 - Categories
 
-> Show our capibilities of organization
+> Show our capabilities of organization
 > Developing our first web-app
 
 ## Tech

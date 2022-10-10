@@ -4,18 +4,56 @@ $thirdly-color: #ffffff;
 $forthly-color: #715BC2;;
 $bold: #0C1115;
 
-
-$grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px
-);
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
+/* Element First Media Queries
+========================================================= */
+
+// A map of breakpoints.
+$breakpoints: (
+  phone: 576px,
+  tablet: 768px,
+  tablet-lg: 992px,
+  desktop: 1200px,
+  desktop-lg: 1400px
+  );
+
+@mixin for-size($breakpoint, $direction:down) {
+
+// If the breakpoint exists in the map.
+@if map-has-key($breakpoints, $breakpoint) {
+
+// Get the breakpoint value.
+$breakpoint-value: map-get($breakpoints, $breakpoint);
+
+// Determine the direction and then write the media query.
+@if $direction == up {
+  @media (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+@else if $direction == down {
+  @media (max-width: $breakpoint-value) {
+    @content;
+    }
+  }
+}
+// If the breakpoint doesn't exist in the map, pass a manual breakpoint
+@else {
+  @if $direction == up {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+  @else if $direction == down {
+    @media (max-width: $breakpoint) {
+      @content;
+      }
+    }
+  }
+}
+
+$primary-color: #715BC2;
+$font8bit: eightBit;
 
 @font-face {
   font-family: eightBit;
@@ -23,6 +61,7 @@ $grid-breakpoints: (
 }
 
 h3 {
+<<<<<<< HEAD
   font-family: eightBit;
 }
 
@@ -31,3 +70,7 @@ a{
   outline: none;
 }
 
+=======
+  font-family: $font8bit;
+}
+>>>>>>> adrianDev
