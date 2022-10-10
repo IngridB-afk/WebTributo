@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+/* Element First Media Queries
+========================================================= */
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -18,7 +20,7 @@ a {
   justify-content: center;
   bottom: 0 !important;
   font-size: 9px;
-  color: #0C1115;
+  color: #715BC2;
   opacity: 0.6;
   position: absolute;
   top: 5%;
@@ -54,6 +56,4 @@ a {
   .footer {
     font-size: 12px;
   }
-}
-
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

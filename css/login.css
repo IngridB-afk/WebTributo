@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+/* Element First Media Queries
+========================================================= */
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -47,98 +49,152 @@ body .illustration {
 body .hover {
   width: 100%;
   height: 100%;
-  animation: hover 5s ease-in-out infinite;
-  animation-fill-mode: forwards;
+  -webkit-animation: hover 5s ease-in-out infinite;
+          animation: hover 5s ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-one {
   transform: translateY(-10px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-10 2272ms ease-in-out infinite;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-10 3086ms ease-in-out infinite;
+          animation: fadeNumberDown-10 3086ms ease-in-out infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-two {
   transform: translateY(-20px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-20 2825ms ease-in-out infinite;
-  animation-delay: 4510ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-20 3922ms ease-in-out infinite;
+          animation: fadeNumberDown-20 3922ms ease-in-out infinite;
+  -webkit-animation-delay: 2694ms;
+          animation-delay: 2694ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-three {
   transform: translateY(-30px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-30 2780ms ease-in-out infinite;
-  animation-delay: 2173ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-30 5648ms ease-in-out infinite;
+          animation: fadeNumberDown-30 5648ms ease-in-out infinite;
+  -webkit-animation-delay: 1787ms;
+          animation-delay: 1787ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-four {
   transform: translateY(-50px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-50 4156ms ease-in-out infinite;
-  animation-delay: 2342ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-50 4963ms ease-in-out infinite;
+          animation: fadeNumberDown-50 4963ms ease-in-out infinite;
+  -webkit-animation-delay: 3559ms;
+          animation-delay: 3559ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-five {
   transform: translateY(-60px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-60 5677ms ease-in-out infinite;
-  animation-delay: 2591ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-60 2552ms ease-in-out infinite;
+          animation: fadeNumberDown-60 2552ms ease-in-out infinite;
+  -webkit-animation-delay: 2490ms;
+          animation-delay: 2490ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-six {
   transform: translateY(-70px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-70 2419ms ease-in-out infinite;
-  animation-delay: 3896ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-70 2551ms ease-in-out infinite;
+          animation: fadeNumberDown-70 2551ms ease-in-out infinite;
+  -webkit-animation-delay: 1676ms;
+          animation-delay: 1676ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-seven {
   transform: translateY(-80px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-80 3795ms ease-in-out infinite;
-  animation-delay: 5210ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-80 2235ms ease-in-out infinite;
+          animation: fadeNumberDown-80 2235ms ease-in-out infinite;
+  -webkit-animation-delay: 452ms;
+          animation-delay: 452ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-eight {
   transform: translateY(-90px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-90 2850ms ease-in-out infinite;
-  animation-delay: 5998ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-90 3543ms ease-in-out infinite;
+          animation: fadeNumberDown-90 3543ms ease-in-out infinite;
+  -webkit-animation-delay: 4425ms;
+          animation-delay: 4425ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-nine {
   transform: translateY(-100px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-100 5888ms ease-in-out infinite;
-  animation-delay: 942ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-100 2229ms ease-in-out infinite;
+          animation: fadeNumberDown-100 2229ms ease-in-out infinite;
+  -webkit-animation-delay: 1812ms;
+          animation-delay: 1812ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-ten {
   transform: translateY(-110px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-110 5886ms ease-in-out infinite;
-  animation-delay: 2415ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-110 2565ms ease-in-out infinite;
+          animation: fadeNumberDown-110 2565ms ease-in-out infinite;
+  -webkit-animation-delay: 1239ms;
+          animation-delay: 1239ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-eleven {
   transform: translateY(-120px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-120 3241ms ease-in-out infinite;
-  animation-delay: 64ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-120 5155ms ease-in-out infinite;
+          animation: fadeNumberDown-120 5155ms ease-in-out infinite;
+  -webkit-animation-delay: 5601ms;
+          animation-delay: 5601ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-twelve {
   transform: translateY(-150px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-150 4393ms ease-in-out infinite;
-  animation-delay: 1693ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-150 2914ms ease-in-out infinite;
+          animation: fadeNumberDown-150 2914ms ease-in-out infinite;
+  -webkit-animation-delay: 467ms;
+          animation-delay: 467ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 body .number-thirteen {
   transform: translateY(-160px) translateZ(0);
   opacity: 0;
-  animation: fadeNumberDown-160 5369ms ease-in-out infinite;
-  animation-delay: 4574ms;
-  animation-fill-mode: forwards;
+  -webkit-animation: fadeNumberDown-160 2070ms ease-in-out infinite;
+          animation: fadeNumberDown-160 2070ms ease-in-out infinite;
+  -webkit-animation-delay: 633ms;
+          animation-delay: 633ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 @keyframes hover {
   0% {
@@ -154,9 +210,41 @@ body .number-thirteen {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes fadeNumberDown-10 {
+  0% {
+    transform: translateY(-10px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(140px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-10 {
   0% {
     transform: translateY(-10px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(140px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeNumberDown-20 {
+  0% {
+    transform: translateY(-20px) translateZ(0);
     opacity: 0;
   }
   40% {
@@ -186,6 +274,22 @@ body .number-thirteen {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeNumberDown-30 {
+  0% {
+    transform: translateY(-30px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(130px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-30 {
   0% {
     transform: translateY(-30px) translateZ(0);
@@ -199,6 +303,22 @@ body .number-thirteen {
   }
   100% {
     transform: translateY(130px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeNumberDown-50 {
+  0% {
+    transform: translateY(-50px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(110px) translateZ(0);
     opacity: 0;
   }
 }
@@ -218,6 +338,22 @@ body .number-thirteen {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeNumberDown-60 {
+  0% {
+    transform: translateY(-60px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(90px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-60 {
   0% {
     transform: translateY(-60px) translateZ(0);
@@ -234,9 +370,41 @@ body .number-thirteen {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeNumberDown-70 {
+  0% {
+    transform: translateY(-70px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(80px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-70 {
   0% {
     transform: translateY(-70px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(80px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeNumberDown-80 {
+  0% {
+    transform: translateY(-80px) translateZ(0);
     opacity: 0;
   }
   40% {
@@ -266,9 +434,41 @@ body .number-thirteen {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeNumberDown-90 {
+  0% {
+    transform: translateY(-90px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(60px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-90 {
   0% {
     transform: translateY(-90px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(60px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeNumberDown-100 {
+  0% {
+    transform: translateY(-100px) translateZ(0);
     opacity: 0;
   }
   40% {
@@ -298,6 +498,22 @@ body .number-thirteen {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeNumberDown-110 {
+  0% {
+    transform: translateY(-110px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(30px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-110 {
   0% {
     transform: translateY(-110px) translateZ(0);
@@ -311,6 +527,22 @@ body .number-thirteen {
   }
   100% {
     transform: translateY(30px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeNumberDown-120 {
+  0% {
+    transform: translateY(-120px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(20px) translateZ(0);
     opacity: 0;
   }
 }
@@ -330,9 +562,41 @@ body .number-thirteen {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeNumberDown-150 {
+  0% {
+    transform: translateY(-150px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(10px) translateZ(0);
+    opacity: 0;
+  }
+}
 @keyframes fadeNumberDown-150 {
   0% {
     transform: translateY(-150px) translateZ(0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(10px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeNumberDown-160 {
+  0% {
+    transform: translateY(-160px) translateZ(0);
     opacity: 0;
   }
   40% {
@@ -393,7 +657,7 @@ body .lightback .place {
   }
 }
 body .lightback .place .form-control {
-  background-color: #0C1115;
+  background-color: #715BC2;
   position: relative;
   color: #ffffff;
 }
@@ -421,6 +685,8 @@ body .lightback .place .remember h6 {
   position: relative;
 }
 body .lightback .place .signup {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   align-self: center;
@@ -435,6 +701,4 @@ body .lightback .place .signup {
   .framefooter {
     font-size: 20px;
   }
-}
-
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */
