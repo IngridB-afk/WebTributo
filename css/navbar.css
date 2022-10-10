@@ -17,5 +17,16 @@ a {
 .navbar {
   background-color: #0C1115;
 }
-
-/*# sourceMappingURL=navbar.css.map */
+.navbar .navbar-brand {
+  font-weight: bolder;
+}
+@media (min-width: 1200px) {
+  .navbar .logOut {
+    margin-left: 1%;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar .logOut {
+    margin-top: 2%;
+  }
+}/*# sourceMappingURL=navbar.css.map */

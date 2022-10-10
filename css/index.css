@@ -14,10 +14,52 @@ a {
   outline: none;
 }
 
-@media (max-width: 767px) {
-  .carousel {
-    margin-left: 5%;
+/*.carousel {
+   @include for-size(phone,down) {
+    margin-left: 0; }
+  @include for-size(tablet,down) {
+    margin-right: 5%;
+
+    .carousel-inner .carousel-item > div {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
   }
+
+  .carousel-inner {
+    .carousel-item {
+      font: 100% $font8bit;
+      color: $carousel-text-color;
+
+      .carousel-overlay{
+        top: 75%;
+      }
+    }
+    .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+      display: flex;
+    }
+
+    .carousel-item-end, .carousel-item-start {
+      transform: translateX(0);
+    }
+  }
+
+  @include for-size(tablet,up) {
+    .carousel-inner {
+      .carousel-item-end.active, .carousel-item-next {
+        transform: translateX(25%);
+      }
+
+      .carousel-item-start.active, .carousel-item-prev {
+        transform: translateX(-25%);
+      }
+    }
+  } 
+}*/
+@media (max-width: 767px) {
   .carousel .carousel-inner .carousel-item > div {
     display: none;
   }
@@ -25,126 +67,150 @@ a {
     display: block;
   }
 }
-@media (max-width: 510px) {
-  .carousel {
-    margin-left: 0;
+@media (max-width: 767px) {
+  .carousel .carousel-item {
+    margin-left: 3%;
+  }
+  .carousel .carousel-control-prev {
+    left: 4%;
+  }
+  .carousel .carousel-control-next {
+    right: 4%;
   }
 }
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+@media (max-width: 576px) {
+  .carousel .carousel-control-prev {
+    left: 2%;
+  }
+  .carousel .carousel-control-next {
+    right: 2%;
+  }
+}
+.carousel .carousel-inner .carousel-item.active,
+.carousel .carousel-inner .carousel-item-next,
+.carousel .carousel-inner .carousel-item-prev {
   display: flex;
 }
-
-/* medium and up screens */
-@media (min-width: 768px) {
-  .carousel-inner .carousel-item-end.active,
-.carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  .carousel-inner .carousel-item-start.active,
-.carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-}
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
-}
-
-.carousel-item {
+.carousel .carousel-item {
   font: 100% eightBit;
   color: #fff;
 }
-.carousel-item .card-img-overlay {
-  top: 75%;
+.carousel .carousel-item .grow {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
 }
-
-.row-recently-played:after {
-  display: block;
-  content: "";
-  clear: both;
+.carousel .carousel-item .grow:hover {
+  transform: scale(1.2);
+  filter: saturate(300%);
 }
-
-.recently-played {
-  margin-top: -30px;
+.carousel .carousel-item .carousel-overlay {
+  top: 65%;
 }
-.recently-played .recently-played-title {
-  position: absolute;
-  top: 56%;
+@media (max-width: 992px) {
+  .carousel .carousel-item .carousel-overlay {
+    top: 50%;
+    font-size: 0.75rem;
+  }
 }
-@media (min-width: 576px) {
-  .recently-played .recently-played-title {
-    top: 58%;
+@media (max-width: 768px) {
+  .carousel .carousel-item .carousel-overlay {
+    top: 70%;
+    font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
-  .recently-played .recently-played-title {
-    top: 38%;
+  .carousel .carousel-inner .carousel-item-end.active,
+.carousel .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
   }
+  .carousel .carousel-inner .carousel-item-start.active,
+.carousel .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+.carousel .carousel-inner .carousel-item-end,
+.carousel .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.recently-played {
+  margin-top: 7vh;
+}
+.recently-played .recently-played-row .recently-played-item {
+  font: 100% eightBit;
+  color: #fff;
+}
+.recently-played .recently-played-row .recently-played-item .recently-played-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.recently-played .recently-played-row .recently-played-item .recently-played-overlay {
+  left: 3%;
+}
+.recently-played .recently-played-row .recently-played-item .recently-played-overlay .card-title {
+  font-size: 1rem;
+}
+.recently-played .recently-played-row .recently-played-item .recently-played-overlay .card-text {
+  font-size: 0.75rem;
+}
+
+.categories {
+  margin-top: 5vh;
+  font: 100% eightBit;
 }
 @media (min-width: 992px) {
-  .recently-played .recently-played-title {
-    top: 42%;
+  .categories .collapse.dont-collapse-md {
+    display: block;
+    height: auto !important;
+    visibility: visible;
   }
 }
-@media (min-width: 1200px) {
-  .recently-played .recently-played-title {
-    top: 45%;
+.categories .collapse.dont-collapse-md dt {
+  margin-top: 2%;
+}
+@media (max-width: 992px) {
+  .categories .collapse.dont-collapse-md dt {
+    text-align: center;
   }
 }
-@media (min-width: 1400px) {
-  .recently-played .recently-played-title {
-    top: 48%;
+.categories .collapse.dont-collapse-md dt .categories-img {
+  border-radius: 0.25rem;
+  max-width: 100%;
+}
+.categories .collapse.dont-collapse-md dd {
+  margin-top: 2%;
+}
+@media (max-width: 992px) {
+  .categories .collapse.dont-collapse-md dd {
+    text-align: center;
   }
 }
-.recently-played .recently-played-items {
-  position: relative;
-  display: flex;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  margin-bottom: 30px;
-  padding-bottom: 56.25%;
-  height: 100%;
-  padding: 0;
-  overflow: hidden;
-  margin-top: 100px;
+
+.card {
+  flex-direction: inherit;
+  border: 0px;
 }
-.recently-played .recently-played-items .title-caption {
-  position: absolute;
-  bottom: 0;
-  padding: 5px 15px;
-  z-index: 1;
-  width: 80%;
+.card .card-title {
+  font-size: 1.25rem;
 }
-.recently-played .recently-played-items .title-caption .overflow-wrap {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.card .card-text {
+  font-size: 0.75rem;
 }
-.recently-played .recently-played-items .title-caption .title-caption-p {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-  width: 80%;
+
+.grow {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
 }
-.recently-played .recently-played-items .score-caption {
-  font-size: 25px;
-  z-index: 1;
-  position: absolute;
-  font-weight: 600;
-  right: 15px;
-  bottom: 15px;
+
+.grow:hover {
+  transform: scale(1.2);
+  filter: saturate(300%);
 }
-.recently-played .recently-played-items .caption-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  border: 0;
-  display: inline-block;
+
+.shrink {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
 }
 .recently-played .recently-played-items .caption-background:after {
   position: absolute;
@@ -167,3 +233,8 @@ a {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+.shrink:hover {
+  transform: scale(0.9);
+  filter: saturate(300%);
+}/*# sourceMappingURL=index.css.map */

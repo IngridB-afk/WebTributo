@@ -14,12 +14,14 @@ a {
   outline: none;
 }
 
+/* importa los estilos definidos en dicho anchor*/
 * {
   box-sizing: border-box;
   margin: 0;
+  /*caracteristicas generales de la pagina*/
 }
 
-.Parte1 {
+.Parte1 { /*caracteriticas personalizadas de esta parte del bloque*/
   margin-top: 0.8cm;
   width: 100%;
   display: flex;
@@ -48,11 +50,11 @@ a {
   border: 2px solid black;
   margin-bottom: 0.5cm;
 }
-.Parte1 .container3 {
+.Parte1 .container3 { /*Este contenedor tiene imagenes, pero no se despliegan por el media query que empieza a partir de los 768px*/
   display: none;
 }
 
-.Parte2 {
+.Parte2 { /* La parte dos se basa en dos columnas y un contenedor. primero tienen las caracteristicas generales de el contenedor padre. y despues de se personalizan cada parte*/
   width: 100%;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -73,6 +75,9 @@ a {
 .Parte2 .PersonalInfo .Info {
   margin: 0.1cm;
 }
+.Parte2 .PersonalInfo .Title {
+  margin: 0.2cm;
+}
 .Parte2 .FavoriteGames {
   margin-top: 2cm;
   width: 100%;
@@ -89,7 +94,7 @@ a {
 .Parte2 .FavoriteGames .Title {
   margin: 0.2cm;
 }
-.Parte2 .Parte3 {
+.Parte2 .Parte3 { /*contenedor donde se agrupan los iconos*/
   width: 100%;
   margin: 2cm;
   display: flex;
@@ -110,7 +115,7 @@ a {
   height: 20vh;
 }
 
-.Parte4 {
+.Parte4 { /* al igual que en la parte 1, las imagenes de este contenedor no se veran hasta que se expanda la ventana mas de 768px*/
   display: none;
 }
 
@@ -124,13 +129,13 @@ a {
   background-color: blueviolet;
 }
 
-@media (min-width: 768px) and (max-width: 1800px) {
-  .Parte1 {
+@media (min-width: 768px) and (max-width: 1800px) { /*Media query dando informacion del breakpoint de la pagina*/
+  .Parte1 { /*Nueva personalizacion para un nuevo layout de la pagina*/
     margin-top: 1cm;
     margin-bottom: 1cm;
     width: 100%;
     display: flex;
-    flex-direction: wrap;
+    flex-direction: wrap; /*Ahora en vez de columnas el flex direction tiene la propiedad wrap, asi acopla todos los elementos de ese contenedor a la pantalla*/
     justify-content: space-around;
   }
   .Parte1 .col-12 {
@@ -147,15 +152,15 @@ a {
     height: 200px;
     border-radius: 50%;
   }
-  .Parte1 .container3 {
+  .Parte1 .container3 { /*Ahora este contenedor si tiene propieddades para que se puedan ver las imagenes*/
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*despliega todo en horizontal*/
     justify-content: center;
     align-items: center;
     font-family: eightBit;
     margin-bottom: 2cm;
-    margin-top: 1cm;
+    margin-top: 2cm;
   }
   .Parte1 .Decoracion {
     display: none;
@@ -180,7 +185,12 @@ a {
     align-items: center;
   }
   .Parte2 .PersonalInfo .Info {
+    justify-content: center;
+    align-items: center;
     margin: 0.1cm;
+  }
+  .Parte2 .PersonalInfo .Title {
+    margin: 0.2cm;
   }
   .Parte2 .FavoriteGames {
     width: 100%;
@@ -218,7 +228,7 @@ a {
     width: 100%;
     height: 20vh;
   }
-  .Parte4 {
+  .Parte4 { /* segundas imagenes*/
     width: 100%;
     height: 40vh;
     display: flex;
@@ -234,6 +244,4 @@ a {
   .framefooter {
     font-size: 20px;
   }
-}
-
-/*# sourceMappingURL=profile.css.map */
+}/*# sourceMappingURL=profile.css.map */

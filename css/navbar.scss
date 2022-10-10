@@ -2,4 +2,15 @@
 
 .navbar{
     background-color: $primary-color;
+    .navbar-brand{
+        font-weight: bolder;
+    }
+    .logOut{
+        @include for-size(desktop,up) {
+            margin-left: 1%;
+        }
+        @include for-size(desktop,down) {
+            margin-top: 2%;
+        }
+    }
 }
