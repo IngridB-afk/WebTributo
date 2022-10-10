@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+/* Element First Media Queries
+========================================================= */
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -13,7 +15,7 @@ a {
 }
 
 .container-fluid {
-  background: #0C1115;
+  background: #715BC2;
 }
 
 h1 {
@@ -95,9 +97,35 @@ p {
   background: #F7C8FF;
   padding: 8%;
   border-radius: 50%;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes example {
+  0% {
+    background-color: #F7C8FF;
+  }
+  10% {
+    background-color: #b370bf;
+  }
+  25% {
+    background-color: #7f64b7;
+  }
+  45% {
+    background-color: #997a9e;
+  }
+  65% {
+    background-color: #7f64b7;
+  }
+  80% {
+    background-color: #b370bf;
+  }
+  100% {
+    background-color: #F7C8FF;
+  }
 }
 @keyframes example {
   0% {
@@ -152,11 +180,12 @@ p {
   top: 1px;
 }
 
-.redes {
-  font-size: 100%;
-  background: #715BC2;
-  display: flex;
-  padding: 1%;
+.framefooter {
+  width: 90vw;
+  position: relative;
 }
-
-/*# sourceMappingURL=aboutUs.css.map */
+@media (min-width: 1200px) {
+  .framefooter {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=aboutUs.css.map */
