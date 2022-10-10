@@ -1,4 +1,21 @@
-$primary-color: #715BC2;;
+$primary-color: #0C1115;
+$secondary-color: #C42177;
+$thirdly-color: #ffffff;
+$forthly-color: #715BC2;;
+$bold: #0C1115;
+
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
 
 @font-face {
   font-family: eightBit;
@@ -8,3 +25,9 @@ $primary-color: #715BC2;;
 h3 {
   font-family: eightBit;
 }
+
+a{
+  text-decoration: none;
+  outline: none;
+}
+
