@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"sourceRoot":"","sources":["global.scss","navbar.scss"],"names":[],"mappings":"AAiBQ;AAER;EACE;EACA;;AAGF;EACE;;;AAGF;EACE;EACA;;;AC5BF;EACI,kBDHY","file":"navbar.css"}
-=======
 {"version":3,"sources":["global.scss","navbar.css","navbar.scss"],"names":[],"mappings":"AAAA;2DAAA;AAkDA;EACE,qBAAA;EACA,gDAAA;AC/CF;ADkDA;EACE,qBARS;ACxCX;;ACNA;EACI,yBF4CY;ACnChB","file":"navbar.css"}
->>>>>>> adrianDev

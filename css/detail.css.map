@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["detail.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;;;AAEJ;EACI;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAGJ;EACI;;;AAEJ;EACI","file":"detail.css"}
-=======
-{"version":3,"sources":["global.scss","detail.css"],"names":[],"mappings":"AAAA;2DAAA;AAkDA;EACE,qBAAA;EACA,gDAAA;AC/CF;ADkDA;EACE,qBARS;ACxCX","file":"detail.css"}
->>>>>>> adrianDev

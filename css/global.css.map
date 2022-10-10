@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":3,"sourceRoot":"","sources":["global.scss"],"names":[],"mappings":"AAiBQ;AAER;EACE;EACA;;AAGF;EACE;;;AAGF;EACE;EACA","file":"global.css"}
-=======
 {"version":3,"sources":["global.scss","global.css"],"names":[],"mappings":"AAAA;2DAAA;AAkDA;EACE,qBAAA;EACA,gDAAA;AC/CF;ADkDA;EACE,qBARS;ACxCX","file":"global.css"}
->>>>>>> adrianDev

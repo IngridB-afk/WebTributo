@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
-=======
-/* Element First Media Queries
-========================================================= */
->>>>>>> adrianDev
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -18,12 +13,5 @@ a {
 }
 
 .navbar {
-<<<<<<< HEAD
-  background-color: #0C1115;
-}
-
-/*# sourceMappingURL=navbar.css.map */
-=======
   background-color: #715BC2;
 }/*# sourceMappingURL=navbar.css.map */
->>>>>>> adrianDev
