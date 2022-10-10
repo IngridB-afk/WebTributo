@@ -13,171 +13,42 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Place your stylesheet here-->
     <link href="../css/navbar.css" rel="stylesheet" type="text/css">
-    <link href="../css/global.css" rel="stylesheet" type="text/css">
     <link href="../css/profile.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Games-A</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/views/profile.html">Profile</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/views/aboutUs.html">About Us</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="views/detail.html">Detail</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="views/login.html">LogOut</a>
+                        <a class="nav-link active" aria-current="page" href="#">Profile</a>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-success" type="submit">Search</button>
                 </form>
+                <div  class="logOut">
+                    <button class="btn btn-danger" href="views/login.html">LogOut</button>
+                </div>
             </div>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </header>
 
 
     <main role="main" class="container">
-        <div class="Parte1">
-
-            <div class="col-12">
-                <h3 class="User"><u>User 999</u></h3>
-            </div>
-            <div class="col-12">
-                <img class="Avatar" src="./img/img3.jpg" class="img-fluid" alt="">
-            </div><br>
-            <hr class="Decoracion">
-            <div class="container3">
-                <div class="container-imagenes">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <img src="./img/img1.png" class="img-thumbnail" class="img-fluid" alt="">
-                            <p class="text-center">Days Gone</p>
-                        </div>
-                        <div class="col">
-                            <img src="./img/img2.jpg" class="img-thumbnail" class="img-fluid" alt="">
-                            <p class="text-center">Ark</p>
-                        </div>
-                        <div class="col">
-                            <img src="./img/img4.jpg" class="img-thumbnail"  class="img-fluid" alt="">
-                            <p class="text-center">The Last of Us</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="Parte2">
-            <div class="col-12-1">
-                <div class="PersonalInfo">
-                    <h2 class="Title">Personal Info</h2>
-                    <p class="Info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt deleniti dolor
-                        laudantium neque assumenda nostrum ad soluta atque perferendis exercitationem, ab sit porro. Cum
-                        eligendi ab voluptates autem sequi.<br><br></p>
-                </div>
-            </div>
-            <div class="col-12-2">
-                <div class=" FavoriteGames">
-                    <h2 class="Title">Favorite Games</h2>
-                    <p class="Games"><strong> Survival Games</strong> are mostly action adventure games in which players
-                        begin with minimal equipment and have to survive for as long as they can. Fight for your life
-                        against zombies, dinosaurs or dragons in our online survival games here at Silvergames.com. Try
-                        to
-                        escape an open world island full of dangerous animals. Compete against other online players left
-                        alone in the wilderness or even the vastness of space. Play classic survival games like
-                        Minecraft
-                        where you have to craft useful tools and weapons from the resources you find around you</p>
-                </div>
-
-            </div>
-            <div class="Parte3">
-                <div class="col">
-                    <button  type="button" class="btn btn-outline-info"><img class="Control" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" src="./img/controller.svg"
-                            alt=""><strong>Platforms</strong></button>
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body">
-                                  <li>
-                                    <ul><a href="https://www.epicgames.com/site/es-ES/home" target="_blank"> Epic Games</a></ul>
-                                    <ul><a href="https://www.playstation.com/es-es/playstation-network/" target="_blank"> Play Station</a></ul>
-                                    <ul><a href="https://www.xbox.com/es-ES/" target="_blank">Xbox</a></ul>
-                                  </li>
-                                </div>
-                            </div>
-                            
-                </div>
-                <div class="col">
-                   <button type="button" class="btn btn-outline-info"><img class="Trophy" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2" src="./img/trophy.svg" alt=""><strong>Trophies</strong></button>
-                   <div class="collapse multi-collapse" id="multiCollapseExample2">
-                    <div class="card card-body">
-                        <li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning " role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
-                            </div>
-                         <ul>Trophies 999</ul>
-                         <ul>XP: 120000</ul>   
-                         <ul>Level: Gold Range</ul>
-                        </li>
-                     </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <button type="button" class="btn btn-outline-info"><img class="Gift"data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3" src="./img/gift.svg" alt=""><strong>Rewards</strong></button>
-                    <div class="collapse multi-collapse" id="multiCollapseExample3">
-                        <div class="card card-body">
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                                </div>
-                             <ul>2 Rewards</ul>
-                             <ul>4 Items unlock</ul>   
-                             <ul>buy 300 CoinsPoints</ul>
-                            </li>
-                         </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="Parte4">
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <img src="./img/img5.jpg" class="img-thumbnail" class="img-fluid" alt="">
-                    <p class="text-center">Elden Ring</p>
-                </div>
-                <div class="col-4">
-                    <img src="./img/img6.jpg" class="img-thumbnail" class="img-fluid" alt="">
-                    <p class="text-center">Don't Starve</p>
-                </div>
-            </div>
-
-        </div>
         
-
-
         
 
 

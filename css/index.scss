@@ -11,6 +11,31 @@ $carousel-text-color: #fff;
         display: block;
     }
 }
+@media (max-width: 767px) {
+  .carousel-item{
+    margin-left: 3% ;
+  }
+
+  .carousel-control-prev {
+    left: 4%;
+  }
+  
+  .carousel-control-next {
+    right: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .carousel-control-prev {
+    left: 2%;
+  }
+  
+  .carousel-control-next {
+    right: 2%;
+  }
+}
+
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -31,7 +56,20 @@ $carousel-text-color: #fff;
     filter: saturate(300%);
   }
   .carousel-overlay{
-    top:70%;
+    top:65%;
+  }
+  @media (max-width: 992px) {
+    .carousel-overlay{
+      top: 50%;
+      font-size: 0.75rem; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-overlay{
+      top: 70%;
+      font-size: 1rem; 
+    }
   }
 }
 
@@ -113,18 +151,16 @@ $carousel-text-color: #fff;
         width: fit-content;
       }
       .recently-played-overlay{
-        top:60%;
+        left:3%;
+          .card-title{
+            font-size: 1rem;
+          }
+          .card-text{
+            font-size: 0.75rem;
+          }
       }
     }
-    .shrink { 
-      transition: all .2s ease-in-out; 
-      filter: initial;
-      }
-      
-      .shrink:hover { 
-      transform: scale(0.9); 
-      filter: saturate(300%);
-      }
+    
   }
 }
 
@@ -132,20 +168,6 @@ $carousel-text-color: #fff;
   margin-top: 5vh;
   font: 100% $font8bit;
   
-  .categories-col{
-    @include for-size(phone,down) {
-      margin-left: 4vw;
-    } 
-    @include for-size(phone,up) {
-      margin-left: 5vw;
-    } 
-    @include for-size(tablet,up) {
-      margin-left: 15vw;
-    } 
-    @include for-size(tablet-lg,up) {
-      margin-left: 0;
-    } 
-  }
   .collapse.dont-collapse-md {
     @include for-size(tablet-lg,up) {
       display: block;
@@ -154,13 +176,21 @@ $carousel-text-color: #fff;
     }
     dt {
       margin-top: 2%;
+      
+      @include for-size(tablet-lg,down){
+        text-align: center;
+      }
       .categories-img{
         border-radius: .25rem;
         max-width: 100%;
       }
     }
+    
     dd {
       margin-top: 2%;
+      @include for-size(tablet-lg,down){
+        text-align: center;
+      }
     }
   }
 }
@@ -175,3 +205,23 @@ $carousel-text-color: #fff;
     font-size: 0.75rem;
   }
 }
+
+.grow { 
+  transition: all .2s ease-in-out; 
+  filter: initial;
+}
+  
+.grow:hover { 
+  transform: scale(1.2);
+  filter: saturate(300%);
+}
+
+.shrink { 
+  transition: all .2s ease-in-out; 
+  filter: initial;
+  }
+  
+  .shrink:hover { 
+  transform: scale(0.9); 
+  filter: saturate(300%);
+  }
