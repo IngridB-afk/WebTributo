@@ -2,7 +2,7 @@
 
 
 .container-fluid {
-    background: $primary-color;
+    background: $forthly-color;
 }
 
 h1 {
@@ -145,11 +145,12 @@ p {
     }
 }
 
-.redes {
-    font-size: 100%;
-    background: #715BC2;
-    display: flex;
-    padding: 1%;
-    ;
+.framefooter {
+    width: 90vw;
+    position: relative;
+
+    @media (min-width:1200px) {
+        font-size: 20px;
+    }
 }
 

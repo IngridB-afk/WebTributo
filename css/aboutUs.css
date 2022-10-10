@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
+/* Element First Media Queries
+========================================================= */
 @font-face {
   font-family: eightBit;
   src: url(../media/fonts/EightBitDragon-anqx.ttf);
@@ -13,7 +15,7 @@ a {
 }
 
 .container-fluid {
-  background: #0C1115;
+  background: #715BC2;
 }
 
 h1 {
@@ -152,11 +154,14 @@ p {
   top: 1px;
 }
 
-.redes {
-  font-size: 100%;
-  background: #715BC2;
-  display: flex;
-  padding: 1%;
+.framefooter {
+  width: 90vw;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .framefooter {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=aboutUs.css.map */

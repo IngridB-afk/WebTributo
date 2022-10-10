@@ -286,12 +286,14 @@
     }
 
 
+    
+}
 
-    .container-footer {
-        margin-top: 1cm;
-        width: 100%;
-        height: 5vh;
+.framefooter {
+    width: 90vw;
+    position: relative;
 
-        background-color: brown;
+    @media (min-width:1200px) {
+        font-size: 20px;
     }
 }
