@@ -27,7 +27,7 @@
         justify-content: space-around;
 
         .Avatar {
-            border: 4px solid blueviolet;
+            border: 4px solid #715BC2;
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -62,7 +62,7 @@
         width: 100%;
         height: 30vh;
         margin-top: 1cm;
-        border: 5px solid palevioletred;
+        border: 5px solid  #C42177;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -81,7 +81,7 @@
         margin-top: 2cm;
         width: 100%;
         height: 42vh;
-        border: 5px solid palevioletred;
+        border: 5px solid  #C42177;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -147,12 +147,12 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    background-color: blueviolet;
+    background-color: #715BC2;
 }
 
 @media (min-width: 768px) and (max-width: 1800px) {/*Media query dando informacion del breakpoint de la pagina*/
+    
 
-   
     .Parte1 {/*Nueva personalizacion para un nuevo layout de la pagina*/
         margin-top: 1cm;
         margin-bottom: 1cm;
@@ -170,7 +170,7 @@
             justify-content: left;
 
             .Avatar {
-                border: 4px solid blueviolet;
+                border: 4px solid #715BC2;
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
@@ -212,7 +212,7 @@
         .PersonalInfo {
             width: 100%;
             height: 45vh;
-            border: 5px solid palevioletred;
+            border: 5px solid #C42177;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -237,7 +237,7 @@
         .FavoriteGames {
             width: 100%;
             height: 60vh;
-            border: 5px solid palevioletred;
+            border: 5px solid  #C42177;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -256,7 +256,7 @@
 
         .Parte3 {
             width: 100%;
-            border: 5px solid palevioletred;
+            border: 5px solid #C42177;
             display: flex;
             flex-direction: column;
             align-items: center;
