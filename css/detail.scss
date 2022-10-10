@@ -49,3 +49,62 @@ p{
 .caracteristicas img {
     float: right;
 }
+
+// footer
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+    font-size: 9px;
+    color: $thirdly-color;
+    opacity: 0.9;
+    top: 5%;
+    bottom: 0;
+    width: 90vw;
+    padding-left: 5%;
+
+    .word {
+        display: flex;
+        justify-content: space-around;
+        
+
+        .words {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            img {
+                width: 10px;
+                height: 10px;
+                // filter: invert(0.8) sepia(1) hue-rotate(10deg) saturate(40%);
+            }
+        }
+
+        .imgsocials {
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            // filter: invert(0.8) sepia(1) hue-rotate(10deg) saturate(40%);
+            a:visited{
+                color: $thirdly-color;
+            }
+        }
+    }
+
+    .copyright2 {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .footer {
+
+        font-size: 12px;
+    }
+}
