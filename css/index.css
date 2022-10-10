@@ -14,49 +14,84 @@ a {
   outline: none;
 }
 
-@media (max-width: 576px) {
-  .carousel {
-    margin-left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .carousel {
+.carousel {
+  /* @include for-size(phone,down) {
+    margin-left: 0; }
+  @include for-size(tablet,down) {
     margin-right: 5%;
+
+    .carousel-inner .carousel-item > div {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+    }
   }
+
+  .carousel-inner {
+    .carousel-item {
+      font: 100% $font8bit;
+      color: $carousel-text-color;
+
+      .carousel-overlay{
+        top: 75%;
+      }
+    }
+    .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+      display: flex;
+    }
+
+    .carousel-item-end, .carousel-item-start {
+      transform: translateX(0);
+    }
+  }
+
+  @include for-size(tablet,up) {
+    .carousel-inner {
+      .carousel-item-end.active, .carousel-item-next {
+        transform: translateX(25%);
+      }
+
+      .carousel-item-start.active, .carousel-item-prev {
+        transform: translateX(-25%);
+      }
+    }
+  } */
 }
-.carousel .carousel-item {
-  font: 100% eightBit;
-  color: #fff;
-}
-.carousel .carousel-item .carousel-overlay {
-  top: 75%;
+@media (max-width: 767px) {
+  .carousel .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
 }
 .carousel .carousel-inner .carousel-item.active,
 .carousel .carousel-inner .carousel-item-next,
 .carousel .carousel-inner .carousel-item-prev {
   display: flex;
 }
-@media (max-width: 768px) {
-  .carousel .carousel-inner .carousel-item.active .carousel-item > div,
-.carousel .carousel-inner .carousel-item-next .carousel-item > div,
-.carousel .carousel-inner .carousel-item-prev .carousel-item > div {
-    display: none;
-  }
+.carousel .carousel-item {
+  font: 100% eightBit;
+  color: #fff;
 }
-@media (max-width: 768px) {
-  .carousel .carousel-inner .carousel-item.active .carousel-item > div:first-child,
-.carousel .carousel-inner .carousel-item-next .carousel-item > div:first-child,
-.carousel .carousel-inner .carousel-item-prev .carousel-item > div:first-child {
-    display: block;
-  }
+.carousel .carousel-item .grow {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
+}
+.carousel .carousel-item .grow:hover {
+  transform: scale(1.2);
+  filter: saturate(300%);
+}
+.carousel .carousel-item .carousel-overlay {
+  top: 70%;
 }
 @media (min-width: 768px) {
   .carousel .carousel-inner .carousel-item-end.active,
 .carousel .carousel-inner .carousel-item-next {
     transform: translateX(25%);
   }
-}
-@media (min-width: 768px) {
   .carousel .carousel-inner .carousel-item-start.active,
 .carousel .carousel-inner .carousel-item-prev {
     transform: translateX(-25%);
@@ -68,14 +103,7 @@ a {
 }
 
 .recently-played {
-  margin-top: 15vh;
-}
-.recently-played .recently-played-row {
-  margin-top: 2vh;
-}
-.recently-played .recently-played-row .card {
-  flex-direction: inherit;
-  border: 0px;
+  margin-top: 7vh;
 }
 .recently-played .recently-played-row .recently-played-item {
   font: 100% eightBit;
@@ -96,4 +124,57 @@ a {
 .recently-played .recently-played-row .shrink:hover {
   transform: scale(0.9);
   filter: saturate(300%);
+}
+
+.categories {
+  margin-top: 5vh;
+  font: 100% eightBit;
+}
+@media (max-width: 576px) {
+  .categories .categories-col {
+    margin-left: 4vw;
+  }
+}
+@media (min-width: 576px) {
+  .categories .categories-col {
+    margin-left: 5vw;
+  }
+}
+@media (min-width: 768px) {
+  .categories .categories-col {
+    margin-left: 15vw;
+  }
+}
+@media (min-width: 992px) {
+  .categories .categories-col {
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .categories .collapse.dont-collapse-md {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+  }
+}
+.categories .collapse.dont-collapse-md dt {
+  margin-top: 2%;
+}
+.categories .collapse.dont-collapse-md dt .categories-img {
+  border-radius: 0.25rem;
+  max-width: 100%;
+}
+.categories .collapse.dont-collapse-md dd {
+  margin-top: 2%;
+}
+
+.card {
+  flex-direction: inherit;
+  border: 0px;
+}
+.card .card-title {
+  font-size: 1.25rem;
+}
+.card .card-text {
+  font-size: 0.75rem;
 }/*# sourceMappingURL=index.css.map */

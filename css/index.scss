@@ -3,62 +3,111 @@
 $carousel-text-color: #fff;
 
 .carousel{
-    @include for-size(phone,down) {
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-item {
+  font: 100% $font8bit;
+  color: $carousel-text-color;
+  .grow { 
+    transition: all .2s ease-in-out; 
+    filter: initial;
+  }
+    
+  .grow:hover { 
+    transform: scale(1.2);
+    filter: saturate(300%);
+  }
+  .carousel-overlay{
+    top:70%;
+  }
+}
+
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+
+    /* @include for-size(phone,down) {
       margin-left: 0; }
     @include for-size(tablet,down) {
-      margin-right: 5%; }
+      margin-right: 5%;
+        
+      .carousel-inner .carousel-item > div {
+        display: none;
+      
+        &:first-child {
+          display: block;
+        }
+      }
+    }
     
-    .carousel-item {
-      font: 100% $font8bit;
-      color: $carousel-text-color;
+    .carousel-inner {
+      .carousel-item {
+        font: 100% $font8bit;
+        color: $carousel-text-color;
         
         .carousel-overlay{
           top: 75%;
         }
-    }
-    .carousel-inner .carousel-item.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
+      }
+      .carousel-item.active, .carousel-item-next, .carousel-item-prev {
         display: flex;
-      .carousel-item > div {
-        @include for-size(tablet,down) {
-          display: none; }
       }
-      .carousel-item > div:first-child {
-        @include for-size(tablet,down) {
-          display: block; }
+      
+      .carousel-item-end, .carousel-item-start {
+        transform: translateX(0);
       }
     }
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      @include for-size(tablet,up) {
-        transform: translateX(25%);
+      
+    @include for-size(tablet,up) {
+      .carousel-inner {
+        .carousel-item-end.active, .carousel-item-next {
+          transform: translateX(25%);
+        }
+      
+        .carousel-item-start.active, .carousel-item-prev {
+          transform: translateX(-25%);
+        }
       }
-    }
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      @include for-size(tablet,up) {
-        transform: translateX(-25%);
-      }
-    }  
-    .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start { 
-      transform: translateX(0);
-    }
+    } */    
 }
 
 .recently-played{
-  margin-top: 15vh;
+  margin-top: 7vh;
 
   .recently-played-row{
-    margin-top: 2vh;
 
-    .card{
-      flex-direction: inherit;
-      border: 0px;
-    }
     .recently-played-item{
       font: 100% $font8bit;
+      
       color: $carousel-text-color;
       .recently-played-img{
         width: fit-content;
@@ -76,5 +125,53 @@ $carousel-text-color: #fff;
       transform: scale(0.9); 
       filter: saturate(300%);
       }
+  }
+}
+
+.categories{
+  margin-top: 5vh;
+  font: 100% $font8bit;
+  
+  .categories-col{
+    @include for-size(phone,down) {
+      margin-left: 4vw;
+    } 
+    @include for-size(phone,up) {
+      margin-left: 5vw;
+    } 
+    @include for-size(tablet,up) {
+      margin-left: 15vw;
+    } 
+    @include for-size(tablet-lg,up) {
+      margin-left: 0;
+    } 
+  }
+  .collapse.dont-collapse-md {
+    @include for-size(tablet-lg,up) {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+    dt {
+      margin-top: 2%;
+      .categories-img{
+        border-radius: .25rem;
+        max-width: 100%;
+      }
+    }
+    dd {
+      margin-top: 2%;
+    }
+  }
+}
+
+.card{
+  flex-direction: inherit;
+  border: 0px;
+  .card-title{
+    font-size: 1.25rem;
+  }
+  .card-text{
+    font-size: 0.75rem;
   }
 }
