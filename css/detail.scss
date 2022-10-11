@@ -1,6 +1,12 @@
 @import "./global.scss";
+<<<<<<< HEAD
  /*primary color palette*/
  body{
+=======
+
+  /*primary color palette*/
+body{
+>>>>>>> 38ecb61af6bdf157e40971cf24bbefdc95fcc47b
     background-color:#0C1115;
 }
 .container{
@@ -32,14 +38,54 @@ h4 {
 p{
     font-family: Poppins;
     text-align: center;
+    margin-bottom: 5%;
 }
 /*carousel*/
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
 .characters{
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    box-shadow: 0px 5px 50px 5px #0C1115;
+    p{
+        font-size: small;
+    }
+}
+.game-images{
+    margin-bottom: 5%;
 }
 .plataformas{
     text-align: center;
@@ -47,4 +93,63 @@ p{
 
 .caracteristicas img {
     float: right;
+}
+
+// footer
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       
+    font-size: 9px;
+    color: $thirdly-color;
+    opacity: 0.9;
+    top: 5%;
+    bottom: 0;
+    width: 90vw;
+    padding-left: 5%;
+
+    .word {
+        display: flex;
+        justify-content: space-around;
+        
+
+        .words {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            img {
+                width: 10px;
+                height: 10px;
+                // filter: invert(0.8) sepia(1) hue-rotate(10deg) saturate(40%);
+            }
+        }
+
+        .imgsocials {
+            display: flex;
+            align-items: center;
+            gap: 5%;
+            // filter: invert(0.8) sepia(1) hue-rotate(10deg) saturate(40%);
+            a:visited{
+                color: $thirdly-color;
+            }
+        }
+    }
+
+    .copyright2 {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    .footer {
+
+        font-size: 12px;
+    }
 }

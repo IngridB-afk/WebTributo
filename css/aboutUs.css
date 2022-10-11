@@ -93,35 +93,9 @@ p {
   background: #F7C8FF;
   padding: 8%;
   border-radius: 50%;
-  -webkit-animation-name: example;
-          animation-name: example;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes example {
-  0% {
-    background-color: #F7C8FF;
-  }
-  10% {
-    background-color: #b370bf;
-  }
-  25% {
-    background-color: #7f64b7;
-  }
-  45% {
-    background-color: #997a9e;
-  }
-  65% {
-    background-color: #7f64b7;
-  }
-  80% {
-    background-color: #b370bf;
-  }
-  100% {
-    background-color: #F7C8FF;
-  }
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 @keyframes example {
   0% {
@@ -184,4 +158,6 @@ p {
   .framefooter {
     font-size: 20px;
   }
-}/*# sourceMappingURL=aboutUs.css.map */
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

@@ -14,8 +14,8 @@ a {
   outline: none;
 }
 
-/*.carousel {
-   @include for-size(phone,down) {
+.carousel {
+  /* @include for-size(phone,down) {
     margin-left: 0; }
   @include for-size(tablet,down) {
     margin-right: 5%;
@@ -57,8 +57,8 @@ a {
         transform: translateX(-25%);
       }
     }
-  } 
-}*/
+  } */
+}
 @media (max-width: 767px) {
   .carousel .carousel-inner .carousel-item > div {
     display: none;
@@ -141,8 +141,6 @@ a {
   color: #fff;
 }
 .recently-played .recently-played-row .recently-played-item .recently-played-img {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .recently-played .recently-played-row .recently-played-item .recently-played-overlay {
@@ -212,29 +210,10 @@ a {
   transition: all 0.2s ease-in-out;
   filter: initial;
 }
-.recently-played .recently-played-items .caption-background:after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, rgba(241, 196, 15, 0.5), rgba(0, 0, 0, 0.15));
-}
-
-.framefooter {
-  width: 90vw;
-  position: relative;
-}
-@media (min-width: 1200px) {
-  .framefooter {
-    font-size: 20px;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
 
 .shrink:hover {
   transform: scale(0.9);
   filter: saturate(300%);
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */

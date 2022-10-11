@@ -12,4 +12,144 @@ h3 {
 a {
   text-decoration: none;
   outline: none;
-}/*# sourceMappingURL=detail.css.map */
+}
+
+/*primary color palette*/
+body {
+  background-color: #0C1115;
+}
+
+.container {
+  background-color: #ffffff;
+}
+
+/*main image*/
+.gamepage {
+  width: 100%;
+  height: 300px;
+  filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
+}
+
+/*tittles & text*/
+h1 {
+  font-family: eightBit;
+  font-size: 75px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: eightBit;
+  text-align: center;
+  margin: 5%;
+}
+
+p {
+  font-family: Poppins;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/*carousel*/
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  .carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.characters {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 5px 50px 5px #0C1115;
+}
+.characters p {
+  font-size: small;
+}
+
+.game-images {
+  margin-bottom: 5%;
+}
+
+.plataformas {
+  text-align: center;
+}
+
+.caracteristicas img {
+  float: right;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 9px;
+  color: #ffffff;
+  opacity: 0.9;
+  top: 5%;
+  bottom: 0;
+  width: 90vw;
+  padding-left: 5%;
+}
+.footer .word {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .word .words {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .word .words img {
+  width: 10px;
+  height: 10px;
+}
+.footer .word .imgsocials {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.footer .word .imgsocials a:visited {
+  color: #ffffff;
+}
+.footer .copyright2 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=detail.css.map */
