@@ -14,6 +14,15 @@ a {
   outline: none;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--background-color);
+  color: #fff;
+}
+
 .carousel {
   /* @include for-size(phone,down) {
     margin-left: 0; }
@@ -141,6 +150,8 @@ a {
   color: #fff;
 }
 .recently-played .recently-played-row .recently-played-item .recently-played-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .recently-played .recently-played-row .recently-played-item .recently-played-overlay {
@@ -214,6 +225,4 @@ a {
 .shrink:hover {
   transform: scale(0.9);
   filter: saturate(300%);
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */

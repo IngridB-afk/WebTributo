@@ -1,301 +1,328 @@
 @import "./global.scss";
 
 body {
-    background-image: url(../media/img/background2.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    max-height: 100vh;
-    max-width: 100vw;
-   
-//  ANIMATION
+	background-image: url(../media/img/background2.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	max-height: 100vh;
+	max-width: 100vw;
 
-section {
-	width: 100%;
-	height: 100%;
-	overflow: inherit;
-    position: relative;
-    top: 0;
-}
+	//  ANIMATION
+
+	section {
+		width: 100%;
+		height: 100%;
+		overflow: inherit;
+		position: relative;
+		top: 0;
+	}
 
 
 
-.illustration {
-	display: block;
-	position: relative;
-	width: 30%;
-	height: 30%;
-	margin: 0 auto;
-	top: 50%;
-	transform: translateY(-5%);
-    
+	.illustration {
+		display: block;
+		position: relative;
+		width: 30%;
+		height: 30%;
+		margin: 0 auto;
+		top: 50%;
+		transform: translateY(-5%);
 
-    @media (min-width:1200px){
-        
-            display: block;
-            position: relative;
-            width: 10%;
-            height: 30%;
-           
-            // top: 50%;
-            // transform: translateY(0%);
-            // transform: translateX(0%);
-            
-        
-    }
-    
-}
 
-.hover {
-	width: 100%;
-	height: 100%;
-	animation: hover 5s ease-in-out infinite;
-	animation-fill-mode: forwards;
-}
+		@media (min-width:1200px) {
 
-.number-one {
-	transform: translateY(-10px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-10 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-fill-mode: forwards;
-}
+			display: block;
+			position: relative;
+			width: 10%;
+			height: 30%;
 
-.number-two {
-	transform: translateY(-20px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-20 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+			// top: 50%;
+			// transform: translateY(0%);
+			// transform: translateX(0%);
 
-.number-three {
-	transform: translateY(-30px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-30 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
 
-.number-four {
-	transform: translateY(-50px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-50 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+		}
 
-.number-five {
-	transform: translateY(-60px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-60 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	}
 
-.number-six {
-	transform: translateY(-70px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-70 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.hover {
+		width: 100%;
+		height: 100%;
+		animation: hover 5s ease-in-out infinite;
+		animation-fill-mode: forwards;
+	}
 
-.number-seven {
-	transform: translateY(-80px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-80 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-one {
+		transform: translateY(-10px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-10 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-fill-mode: forwards;
+	}
 
-.number-eight {
-	transform: translateY(-90px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-90 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-two {
+		transform: translateY(-20px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-20 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-.number-nine {
-	transform: translateY(-100px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-100 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-three {
+		transform: translateY(-30px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-30 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-.number-ten {
-	transform: translateY(-110px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-110 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-four {
+		transform: translateY(-50px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-50 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-.number-eleven {
-	transform: translateY(-120px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-120 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-five {
+		transform: translateY(-60px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-60 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-.number-twelve {
-	transform: translateY(-150px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-150 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-six {
+		transform: translateY(-70px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-70 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-.number-thirteen {
-	transform: translateY(-160px) translateZ(0);
-	opacity: 0;
-	animation: fadeNumberDown-160 (random(4000) + 2000)+ms ease-in-out infinite;
-	animation-delay: random(6000) * 1ms;
-	animation-fill-mode: forwards;
-}
+	.number-seven {
+		transform: translateY(-80px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-80 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-@keyframes hover {
-	0% { transform: translateY(0) }
-	25% { transform: translateY(-3px) }
-	75% { transform: translateY(3px) }
-	100% { transform: translateY(0) }
-}
+	.number-eight {
+		transform: translateY(-90px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-90 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
 
-// Params: $tstart = translate offset (start point), $tend = translate length (end point)
-@mixin generateNumAnimation($tstart, $tend) {
-	@keyframes fadeNumberDown-#{$tstart} {
+	.number-nine {
+		transform: translateY(-100px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-100 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
+
+	.number-ten {
+		transform: translateY(-110px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-110 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
+
+	.number-eleven {
+		transform: translateY(-120px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-120 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
+
+	.number-twelve {
+		transform: translateY(-150px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-150 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
+
+	.number-thirteen {
+		transform: translateY(-160px) translateZ(0);
+		opacity: 0;
+		animation: fadeNumberDown-160 (random(4000) + 2000)+ms ease-in-out infinite;
+		animation-delay: random(6000) * 1ms;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes hover {
 		0% {
-			transform: translateY(-$tstart * 1px) translateZ(0);
-				opacity: 0;
-				}
-		40% { opacity: 0.4; }
-		60% { opacity: 0.4; }
+			transform: translateY(0)
+		}
+
+		25% {
+			transform: translateY(-3px)
+		}
+
+		75% {
+			transform: translateY(3px)
+		}
+
 		100% {
-			transform: translateY($tend * 1px) translateZ(0);
-			opacity: 0;
+			transform: translateY(0)
 		}
 	}
-}
 
-// Create keyframes
-// Number one
-@include generateNumAnimation(10, 140);
-// Number two
-@include generateNumAnimation(20, 140);
-// Number three
-@include generateNumAnimation(30, 130);
-// Number four
-@include generateNumAnimation(50, 110);
-// Number five
-@include generateNumAnimation(60, 90);
-// Number six
-@include generateNumAnimation(70, 80);
-// Number seven
-@include generateNumAnimation(80, 80);
-// Number eight
-@include generateNumAnimation(90, 60);
-// Number nine
-@include generateNumAnimation(100, 60);
-// Number ten
-@include generateNumAnimation(110, 30);
-// Number eleven
-@include generateNumAnimation(120, 20);
-// Number twelve
-@include generateNumAnimation(150, 10);
-// Number thirteen
-@include generateNumAnimation(160, 10);
+	// Params: $tstart = translate offset (start point), $tend = translate length (end point)
+	@mixin generateNumAnimation($tstart, $tend) {
+		@keyframes fadeNumberDown-#{$tstart} {
+			0% {
+				transform: translateY(-$tstart * 1px) translateZ(0);
+				opacity: 0;
+			}
 
-// END ANIMATION
+			40% {
+				opacity: 0.4;
+			}
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        color: $thirdly-color;
-    }
+			60% {
+				opacity: 0.4;
+			}
 
-    .lightback {
-        display: flex;
-        justify-content: center;
+			100% {
+				transform: translateY($tend * 1px) translateZ(0);
+				opacity: 0;
+			}
+		}
+	}
 
-        position: relative;
+	// Create keyframes
+	// Number one
+	@include generateNumAnimation(10, 140);
+	// Number two
+	@include generateNumAnimation(20, 140);
+	// Number three
+	@include generateNumAnimation(30, 130);
+	// Number four
+	@include generateNumAnimation(50, 110);
+	// Number five
+	@include generateNumAnimation(60, 90);
+	// Number six
+	@include generateNumAnimation(70, 80);
+	// Number seven
+	@include generateNumAnimation(80, 80);
+	// Number eight
+	@include generateNumAnimation(90, 60);
+	// Number nine
+	@include generateNumAnimation(100, 60);
+	// Number ten
+	@include generateNumAnimation(110, 30);
+	// Number eleven
+	@include generateNumAnimation(120, 20);
+	// Number twelve
+	@include generateNumAnimation(150, 10);
+	// Number thirteen
+	@include generateNumAnimation(160, 10);
 
-        .place {
-            margin-top: 5%;
-            width: 80vw;
-            height: 77vh;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-content: center;
-            position: relative;
+	// END ANIMATION
 
-            @media (min-width:1200px) {
-                height: 65vh;
-                width: 60vw;
-                margin-top: 5%;
-            }
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		color: $thirdly-color;
+	}
 
-            .form-control {
-                background-color: $forthly-color;
-                position: relative;
-                color: $thirdly-color;
+	.lightback {
+		display: flex;
+		justify-content: center;
 
-            }
+		position: relative;
 
-            .login {
-                background-color: $secondary-color;
-                position: relative;
-				a:visited{
+		.place {
+			margin-top: 5%;
+			width: 80vw;
+			height: 77vh;
+			background: rgba(255, 255, 255, 0.6);
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-content: center;
+			position: relative;
+
+			@media (min-width:1200px) {
+				height: 65vh;
+				width: 60vw;
+				margin-top: 5%;
+			}
+
+			.input-login {
+				background-color: $forthly-color;
+				position: relative;
+				color: $thirdly-color;
+
+			}
+
+			
+			.login {
+				background-color: $secondary-color;
+				position: relative;
+
+				a:visited {
 					color: $thirdly-color;
 
 				}
-            }
+			}
 
-            .remember {
-                display: flex;
-                justify-content: space-between;
-                position: relative;
+			.remember {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
 
-                .remember-check {
-                    display: flex;
-                    justify-content: space-evenly;
-                    width: 35vw;
+				.remember-check {
+					display: flex;
+					justify-content: space-evenly;
+					width: 35vw;
 
-                    @media (min-width:1200px) {
-                        width: 12vw;
-                    }
-                }
+					@media (min-width:1200px) {
+						width: 12vw;
+					}
+				}
 
-                h6 {
-                    text-align: center;
-                    position: relative;
-                }
+				h6 {
+					text-align: center;
+					position: relative;
+				}
 
-            }
+			}
 
-            .signup {
-                width: fit-content;
-                position: relative;
-                align-self: center;
-                background-color: $secondary-color;
-            }
-        }
-    }
+			.signup {
+				width: fit-content;
+				position: relative;
+				align-self: center;
+				background-color: $secondary-color;
+			}
+		}
+	}
 
 }
 
 // Footer
 
 .framefooter {
-    width: 90vw;
-    position: relative;
+	width: 90vw;
+	position: relative;
 
-    @media (min-width:1200px) {
-        font-size: 20px;
-    }
+	@media (min-width:1200px) {
+		font-size: 20px;
+	}
+}
+
+.input-login:invalid {
+	background-color: ivory;
+	border: none;
+	outline: 2px solid red;
+	border-radius: 5px;
 }

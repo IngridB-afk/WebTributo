@@ -2,6 +2,15 @@
 
 $carousel-text-color: #fff;
 
+:root{
+  color-scheme: light dark;
+}
+
+body{
+  background-color: var(--background-color);
+  color: #fff;
+}
+
 .carousel{
   @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {

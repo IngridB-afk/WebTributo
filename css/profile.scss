@@ -1,5 +1,13 @@
 
 @import "./global.scss";/* importa los estilos definidos en dicho anchor*/
+:root{
+    color-scheme: light dark;
+  }
+  
+  body{
+    background-color: var(--background-color);
+    color: black;
+  }
 
 * {
     box-sizing: border-box;

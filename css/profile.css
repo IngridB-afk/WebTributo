@@ -15,6 +15,15 @@ a {
 }
 
 /* importa los estilos definidos en dicho anchor*/
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: var(--background-color);
+  color: black;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -244,6 +253,4 @@ a {
   .framefooter {
     font-size: 20px;
   }
-}
-
-/*# sourceMappingURL=profile.css.map */
+}/*# sourceMappingURL=profile.css.map */
