@@ -2,27 +2,40 @@
 
 $carousel-text-color: #fff;
 
-
-@media (max-width: 767px) {
-  .carousel{
-    margin-left: 5%;
-      .carousel-inner {
-        
-      .carousel-item > div {
-          display: none;
-      }
-    
-      .carousel-item > div:first-child {
-          display: block;
-      }
+.carousel{
+  @media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
     }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+@media (max-width: 767px) {
+  .carousel-item{
+    margin-left: 3% ;
+  }
+
+  .carousel-control-prev {
+    left: 4%;
+  }
+  
+  .carousel-control-next {
+    right: 4%;
   }
 }
-@media (max-width: 510px) {
-  .carousel{
-    margin-left: 0;
+
+@media (max-width: 576px) {
+
+  .carousel-control-prev {
+    left: 2%;
+  }
+  
+  .carousel-control-next {
+    right: 2%;
   }
 }
+
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -30,7 +43,37 @@ $carousel-text-color: #fff;
     display: flex;
 }
 
-/* medium and up screens */
+.carousel-item {
+  font: 100% $font8bit;
+  color: $carousel-text-color;
+  .grow { 
+    transition: all .2s ease-in-out; 
+    filter: initial;
+  }
+    
+  .grow:hover { 
+    transform: scale(1.2);
+    filter: saturate(300%);
+  }
+  .carousel-overlay{
+    top:65%;
+  }
+  @media (max-width: 992px) {
+    .carousel-overlay{
+      top: 50%;
+      font-size: 0.75rem; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-overlay{
+      top: 70%;
+      font-size: 1rem; 
+    }
+  }
+}
+
+
 @media (min-width: 768px) {
     
     .carousel-inner .carousel-item-end.active,
@@ -49,96 +92,108 @@ $carousel-text-color: #fff;
   transform: translateX(0);
 }
 
-.carousel-item {
-  font: 100% $font8bit;
-  color: $carousel-text-color;
-  
-    .card-img-overlay{
-      top: 75%;
-    }
-}
 
-.row-recently-played:after{
-  display: block;
-  content: "";
-  clear: both;
+    /* @include for-size(phone,down) {
+      margin-left: 0; }
+    @include for-size(tablet,down) {
+      margin-right: 5%;
+        
+      .carousel-inner .carousel-item > div {
+        display: none;
+      
+        &:first-child {
+          display: block;
+        }
+      }
+    }
+    
+    .carousel-inner {
+      .carousel-item {
+        font: 100% $font8bit;
+        color: $carousel-text-color;
+        
+        .carousel-overlay{
+          top: 75%;
+        }
+      }
+      .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+        display: flex;
+      }
+      
+      .carousel-item-end, .carousel-item-start {
+        transform: translateX(0);
+      }
+    }
+      
+    @include for-size(tablet,up) {
+      .carousel-inner {
+        .carousel-item-end.active, .carousel-item-next {
+          transform: translateX(25%);
+        }
+      
+        .carousel-item-start.active, .carousel-item-prev {
+          transform: translateX(-25%);
+        }
+      }
+    } */    
 }
 
 .recently-played{
-  margin-top: -30px;
+  margin-top: 7vh;
+
+  .recently-played-row{
+
+    .recently-played-item{
+      font: 100% $font8bit;
+      
+      color: $carousel-text-color;
+      .recently-played-img{
+        width: fit-content;
+      }
+      .recently-played-overlay{
+        left:3%;
+          .card-title{
+            font-size: 1rem;
+          }
+          .card-text{
+            font-size: 0.75rem;
+          }
+      }
+    }
+    
+  }
+}
+
+.categories{
+  margin-top: 5vh;
+  font: 100% $font8bit;
   
-  .recently-played-title{
-      position: absolute;
-      top: 56%; 
-      @include for-size(phone,up) {
-        top: 58%; }
-        @include for-size(tablet,up) {
-          top: 38%; }
-          @include for-size(tablet-lg,up) {
-            top: 42%; }
-            @include for-size(desktop,up) {
-              top: 45%; }
-              @include for-size(desktop-lg,up) {
-                top: 48%; }
-  }
-  .recently-played-items{
-    position: relative;
-    display: flex;
-    color: white;
-    text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
-    margin-bottom: 30px;
-    padding-bottom: 56.25%;
-    height: 100%;
-    padding: 0;
-    overflow: hidden;
-    margin-top:100px;
-
-    .title-caption {
-      position: absolute;
-      bottom: 0;
-      padding: 5px 15px;
-      z-index: 1;
-      width: 80%;
-
-      .overflow-wrap {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+  .collapse.dont-collapse-md {
+    @include for-size(tablet-lg,up) {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+    dt {
+      margin-top: 2%;
+      
+      @include for-size(tablet-lg,down){
+        text-align: center;
       }
-      .title-caption-p {
-          font-size: 20px;
-          font-weight: 600;
-          margin: 0;
-          width: 80%;
+      .categories-img{
+        border-radius: .25rem;
+        max-width: 100%;
       }
     }
-    .score-caption {
-        font-size: 25px;
-        z-index: 1;
-        position: absolute;
-        font-weight: 600;
-        right: 15px;
-        bottom: 15px;
+    
+    dd {
+      margin-top: 2%;
+      @include for-size(tablet-lg,down){
+        text-align: center;
+      }
     }
-    .caption-background{
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      height: 100%;
-      width: 100%;
-      border: 0;
-      display: inline-block;
-    }
-    .caption-background:after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, rgba(241,196,15,0.5), rgba(0,0,0,0.15));
   }
+<<<<<<< HEAD
   } 
 }
 .framefooter {
@@ -149,3 +204,37 @@ $carousel-text-color: #fff;
         font-size: 20px;
     }
 }
+=======
+}
+
+.card{
+  flex-direction: inherit;
+  border: 0px;
+  .card-title{
+    font-size: 1.25rem;
+  }
+  .card-text{
+    font-size: 0.75rem;
+  }
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+  filter: initial;
+}
+  
+.grow:hover { 
+  transform: scale(1.2);
+  filter: saturate(300%);
+}
+
+.shrink { 
+  transition: all .2s ease-in-out; 
+  filter: initial;
+  }
+  
+  .shrink:hover { 
+  transform: scale(0.9); 
+  filter: saturate(300%);
+  }
+>>>>>>> adrianDev

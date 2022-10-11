@@ -1,7 +1,7 @@
-$primary-color: #0C1115;
+$primary-color: #715BC2;
 $secondary-color: #C42177;
 $thirdly-color: #ffffff;
-$forthly-color: #715BC2;
+$forthly-color: #0C1115;
 $bold: #0C1115;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
@@ -14,7 +14,8 @@ $breakpoints: (
   tablet: 768px,
   tablet-lg: 992px,
   desktop: 1200px,
-  desktop-lg: 1400px
+  desktop-lg: 1400px,
+  desktop-xl: 1600px
   );
 
 @mixin for-size($breakpoint, $direction:down) {
