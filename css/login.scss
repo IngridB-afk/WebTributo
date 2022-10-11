@@ -240,7 +240,7 @@ section {
                 margin-top: 5%;
             }
 
-            .form-control {
+            .input-login {
                 background-color: $forthly-color;
                 position: relative;
                 color: $thirdly-color;
@@ -298,4 +298,10 @@ section {
     @media (min-width:1200px) {
         font-size: 20px;
     }
+}
+.input-login:invalid {
+	background-color: ivory;
+	border: none;
+	outline: 2px solid red;
+	border-radius: 5px;
 }
