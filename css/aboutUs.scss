@@ -5,16 +5,19 @@ h1 {
     color: #C42177;
     padding: 5%;
     font-family: eightBit;
+    text-align: center;
 }
 
 h2 {
     color: #C42177;
     padding: 3%;
     font-family: eightBit;
+    text-align: center;
 }
 
 p {
     font-size: 100%;
+    text-align: center;
 }
 
 .contenedor-about-us {
@@ -46,6 +49,10 @@ p {
         padding: 2%;
         @media (max-width:900px){
             width: 100%;
+        }
+
+        .texto-descripcion {
+            text-align: justify;
         }
 
         .caja-botones-descripcion-about-us{

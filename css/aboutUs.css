@@ -18,16 +18,19 @@ h1 {
   color: #C42177;
   padding: 5%;
   font-family: eightBit;
+  text-align: center;
 }
 
 h2 {
   color: #C42177;
   padding: 3%;
   font-family: eightBit;
+  text-align: center;
 }
 
 p {
   font-size: 100%;
+  text-align: center;
 }
 
 .contenedor-about-us {
@@ -61,6 +64,9 @@ p {
     width: 100%;
   }
 }
+.contenedor-about-us .descripcion-about-us .texto-descripcion {
+  text-align: justify;
+}
 .contenedor-about-us .descripcion-about-us .caja-botones-descripcion-about-us {
   text-align: center;
 }
@@ -93,9 +99,35 @@ p {
   background: #F7C8FF;
   padding: 8%;
   border-radius: 50%;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes example {
+  0% {
+    background-color: #F7C8FF;
+  }
+  10% {
+    background-color: #b370bf;
+  }
+  25% {
+    background-color: #7f64b7;
+  }
+  45% {
+    background-color: #997a9e;
+  }
+  65% {
+    background-color: #7f64b7;
+  }
+  80% {
+    background-color: #b370bf;
+  }
+  100% {
+    background-color: #F7C8FF;
+  }
 }
 @keyframes example {
   0% {
@@ -158,6 +190,4 @@ p {
   .framefooter {
     font-size: 20px;
   }
-}
-
-/*# sourceMappingURL=aboutUs.css.map */
+}/*# sourceMappingURL=aboutUs.css.map */
