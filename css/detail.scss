@@ -33,6 +33,7 @@ h4 {
 p{
     font-family: Poppins;
     text-align: center;
+    margin-bottom: 5%;
 }
 /*carousel*/
 @media (max-width: 767px) {
@@ -69,12 +70,17 @@ p{
   transform: translateX(0);
 }
 .characters{
-    background-image: url(/media/img/elden-ring-characters-gallery-background.webp);
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    box-shadow: 0px 5px 50px 5px #0C1115;
+    p{
+        font-size: small;
+    }
+}
+.game-images{
+    margin-bottom: 5%;
 }
 .plataformas{
     text-align: center;
