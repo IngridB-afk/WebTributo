@@ -247,7 +247,11 @@ section {
 
             .login {
                 position: relative;
-				
+				background-color: $secondary-color;
+				a{
+					text-decoration: none;
+					color:white;
+				}
             }
 
             .remember {
