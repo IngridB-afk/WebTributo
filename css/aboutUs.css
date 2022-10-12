@@ -71,8 +71,7 @@ p {
   text-align: center;
 }
 .contenedor-about-us .descripcion-about-us .caja-botones-descripcion-about-us .boton-descripcion {
-  border-radius: 40px 40px 40px 40px;
-  border-color: #f7fafd;
+  border-radius: 40px;
   background: #C42177;
   color: #ffffff;
   padding: 1.2%;
@@ -166,11 +165,9 @@ p {
   padding: 1%;
 }
 .contenedor-team .contenedor-botones-team .boton-team {
-  border-radius: 40px 40px 40px 40px;
-  border-color: #f7fafd;
+  border-radius: 40px;
   background: #C42177;
   color: #ffffff;
-  padding: 0.4em;
   font-weight: bold;
   padding: 1.8%;
 }
