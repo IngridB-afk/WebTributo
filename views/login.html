@@ -19,7 +19,7 @@
     <main role="main" class="container loginpage">
         <div class="nav">
 
-            <h1>LOGO</h1>
+            <h1>Games-A</h1>
 
         </div>
 
@@ -30,10 +30,11 @@
             <div class="col-md-6 place">
                 <h2>Login</h2>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                    <input type="email" class="form-control input-login" id="email-form-control" placeholder="E-mail">
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+                    <input type="password" class="form-control" id="password-form-control"  minlength="6" passwordrules="required: upper; required: lower; required: digit; 
+                    minlength: 6; allowed: [-().&@?'#,/&quot;+]; max-consecutive: 2"  placeholder="Password" autocomplete="new-password" >
                 </div>
                 <button type="button" class="btn btn-secondary btn-lg login"><a href="../index.html">Login</a></button>
                 <br>

@@ -299,3 +299,10 @@ section {
         font-size: 20px;
     }
 }
+
+.input-login:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
