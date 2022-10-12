@@ -7,15 +7,16 @@
     /*caracteristicas generales de la pagina*/
 }
 
+.profile-picture-container{
+    margin-left:2vw;
+}
 
 .Parte1 {/*caracteriticas personalizadas de esta parte del bloque*/
-    margin-top: 0.8cm;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 
     .col-12 {
         width: 100%;
@@ -61,7 +62,6 @@
     .PersonalInfo {
         width: 100%;
         height: 30vh;
-        margin-top: 1cm;
         border: 5px solid palevioletred;
         display: flex;
         flex-direction: column;
@@ -149,12 +149,15 @@
     justify-content: space-around;
     background-color: blueviolet;
 }
-
+@media (max-width: 768px) {
+    .avatar-div{
+        margin-bottom: 3vh;;
+    }
+}
 @media (min-width: 768px) and (max-width: 1800px) {/*Media query dando informacion del breakpoint de la pagina*/
 
    
     .Parte1 {/*Nueva personalizacion para un nuevo layout de la pagina*/
-        margin-top: 1cm;
         margin-bottom: 1cm;
         width: 100%;
         display: flex;
@@ -186,8 +189,6 @@
             justify-content: center;
             align-items: center;
             font-family: eightBit;
-            margin-bottom: 2cm;
-            margin-top: 2cm;
 
         }
 

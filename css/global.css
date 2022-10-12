@@ -12,4 +12,24 @@ h3 {
 a {
   text-decoration: none;
   outline: none;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+  filter: saturate(300%);
+}
+
+.shrink {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
+}
+
+.shrink:hover {
+  transform: scale(0.9);
+  filter: saturate(300%);
 }/*# sourceMappingURL=global.css.map */

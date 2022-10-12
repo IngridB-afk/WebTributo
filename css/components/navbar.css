@@ -14,19 +14,50 @@ a {
   outline: none;
 }
 
+.grow {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+  filter: saturate(300%);
+}
+
+.shrink {
+  transition: all 0.2s ease-in-out;
+  filter: initial;
+}
+
+.shrink:hover {
+  transform: scale(0.9);
+  filter: saturate(300%);
+}
+
 .navbar {
   background-color: #715BC2;
 }
 .navbar .navbar-brand {
   font-weight: bolder;
 }
-@media (min-width: 1200px) {
+.navbar .form-search button {
+  color: white;
+  background-color: #0C1115;
+}
+@media (min-width: 992px) {
   .navbar .logOut {
     margin-left: 1%;
   }
 }
 @media (max-width: 992px) {
   .navbar .logOut {
-    margin-top: 2%;
+    margin-top: 1%;
   }
+  .navbar .logOut .button-large-md {
+    width: 100%;
+  }
+}
+.navbar .logOut button {
+  color: white;
+  background-color: #C42177;
 }/*# sourceMappingURL=navbar.css.map */

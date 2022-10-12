@@ -72,3 +72,22 @@ a{
   outline: none;
 }
 
+.grow { 
+  transition: all .2s ease-in-out; 
+  filter: initial;
+}
+  
+.grow:hover { 
+  transform: scale(1.2);
+  filter: saturate(300%);
+}
+
+.shrink { 
+  transition: all .2s ease-in-out; 
+  filter: initial;
+  }
+  
+  .shrink:hover { 
+  transform: scale(0.9); 
+  filter: saturate(300%);
+  }

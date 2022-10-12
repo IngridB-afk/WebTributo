@@ -1,16 +1,30 @@
-@import "./global.scss";
+@import "../global.scss";
 
 .navbar{
     background-color: $primary-color;
     .navbar-brand{
         font-weight: bolder;
     }
+    .form-search{
+        button{
+            color:white;
+            background-color:$forthly-color;
+        }
+    }
     .logOut{
-        @include for-size(desktop,up) {
+        @include for-size(tablet-lg,up) {
             margin-left: 1%;
         }
         @include for-size(tablet-lg,down) {
-            margin-top: 2%;
+            margin-top: 1%;
+            .button-large-md{
+                width: 100%;
+            }
         }
+        button{
+            color:white;
+            background-color:$secondary-color;
+        }
+        
     }
 }
