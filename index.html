@@ -11,7 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Place your stylesheet here-->
     <link href="/css/components/navbar.css" rel="stylesheet" type="text/css">
@@ -20,9 +20,9 @@
 </head>
 
 <body>
-
 <!-- Navigation -->
 <header class="header">
+    <!-- Navbar using Bootsrap customized  -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Games-A</a>
@@ -52,10 +52,12 @@
         </div>
     </nav>
 </header>
+<!-- FRESH GAMES -->
     <main role="main">
         <div class="container">
             <div class="row mt-5 pt-5">
                 <h3>Fresh games</h3>
+                <!-- Carousel Bootstrap 5.2 -->
                 <div id="freshCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -119,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Carousel controls -->
                 <a class="carousel-control-prev bg-transparent w-aut" href="#freshCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
@@ -128,11 +131,13 @@
             </div>
         </div>
     </div> <!-- /.container -->
-    </main> 
+    </main> <!-- /.end of main -->
 
+    <!-- RECENTLY PLAYED -->
     <section class="recently-played ">
         <div class="container">
             <h3>Recently played</h3>
+            <!-- Bootsrap grid / First Row -->
             <div class="row recently-played-row">
                 <div class="card img-fluid col-md-4 recently-played-item shrink">
                     <img class="card-img" src="media/img/bayo.jpg" alt="Card image" style="width:100%">
@@ -156,6 +161,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Bootsrap grid / Second Row -->
             <div class="row recently-played-row">
                 <div class="card img-fluid col-md-4 recently-played-item shrink">
                     <img class="card-img" src="media/img/dott.jpg" alt="Card image" style="width:100%">
@@ -179,6 +185,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Bootsrap grid / Third Row -->
             <div class="row recently-played-row">
                 <div class="card img-fluid col-md-4 recently-played-item shrink">
                     <img class="card-img" src="media/img/tp.jpg" alt="Card image" style="width:100%">
@@ -202,17 +209,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> <!-- /.container -->
+    </section><!-- /.end of section -->
 
+    <!-- CATEGORIES -->
     <section class="categories">
         <div class="container">
+            <!-- Order elements using Definition List -->
             <dl class="row categories-row"> 
+                <!-- div hidden until screen size < 992px  -->
                 <div class="h-100 d-flex mt-2 align-items-center justify-content-center d-lg-none">
                     <button class="btn btn-outline-dark w-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePopular" aria-expanded="false" aria-controls="collapseExample">
                         Popular
                     </button>
                 </div> 
+                <!-- div collapsed only possible when screen size < 992px  -->
                 <div class="col-lg-3 collapse dont-collapse-md categories-col" id="collapsePopular">
                     <dt class="d-none d-lg-block">Popular</dt>
                     <dl class="row mt-1">  
@@ -232,11 +243,13 @@
                     <dd class="col-md-8">Assassin's Creed IV</dd> 
                     </dl>
                 </div>
+                <!-- div hidden until screen size < 992px  -->
                 <div class="h-100 mt-2 d-flex align-items-center justify-content-center d-lg-none">
                     <button class="btn btn-outline-dark w-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiscover" aria-expanded="false" aria-controls="collapseDiscover">
                         Discover
                     </button>
                 </div>
+                <!-- div collapsed only possible when screen size < 992px  -->
                 <div class="col-lg-3 collapse dont-collapse-md categories-col" id="collapseDiscover">
                     <dt class="d-none d-lg-block">Discover</dt>
                     <dl class="row mt-1">  
@@ -256,11 +269,13 @@
                     <dd class="col-md-8">Monkey Island 2</dd> 
                     </dl>
                 </div>
+                <!-- div hidden until screen size < 992px  -->
                 <div class="h-100 mt-2 d-flex align-items-center justify-content-center d-lg-none">
                     <button class="btn btn-outline-dark w-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNew" aria-expanded="false" aria-controls="collapseNew">
                         New
                     </button>
                 </div>
+                <!-- div collapsed only possible when screen size < 992px  -->
                 <div class="col-lg-3 collapse dont-collapse-md categories-col" id="collapseNew">
                     <dt class="d-none d-lg-block">New</dt>
                     <dl class="row mt-1">  
@@ -280,11 +295,13 @@
                     <dd class="col-md-8">Total War Warhammer 3</dd> 
                     </dl>
                 </div>
+                <!-- div hidden until screen size < 992px  -->
                 <div class="h-100 mt-2 d-flex align-items-center justify-content-center d-lg-none">
                     <button class="btn btn-outline-dark w-50" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFriends" aria-expanded="false" aria-controls="collapseFriends">
                         Friends
                     </button>
                 </div>
+                <!-- div collapsed only possible when screen size < 992px  -->
                 <div class="col-lg-3 collapse dont-collapse-md categories-col" id="collapseFriends">
                     <dt class="d-none d-lg-block">Friends</dt>
                     <dl class="row mt-1">  
@@ -305,11 +322,10 @@
                     </dl>
                 </div>
             </dl>
-        </div>
-    </section>
-        
-    </section>
+        </div><!-- /.container -->
+    </section><!-- /.end of section -->
 
+    <!-- FOOTER called using iframe -->
     <div class="row col-12">
         <iframe src="./components/footer.html" class="row framefooter"
             style=" width:100%; height:15%; border:none;"></iframe>
@@ -326,6 +342,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <!-- carousel javascript -->
     <script src="/js/carousel.js"></script>
 </body>
 

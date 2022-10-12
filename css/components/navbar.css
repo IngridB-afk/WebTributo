@@ -1,5 +1,8 @@
+/********************************
+***       COLOR PALETTE       ***
+********************************/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap");
-/* Element First Media Queries
+/* Media Queries simplified using Sass mixins
 ========================================================= */
 @font-face {
   font-family: eightBit;
@@ -34,6 +37,9 @@ a {
   filter: saturate(300%);
 }
 
+/********************************
+*****        NAVBAR         *****
+********************************/
 .navbar {
   background-color: #715BC2;
 }

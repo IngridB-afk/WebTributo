@@ -1,11 +1,19 @@
+// import of variables and coomon styles from global
 @import "../global.scss";
+
+/********************************
+*****        NAVBAR         *****
+********************************/
 
 .navbar{
     background-color: $primary-color;
+
     .navbar-brand{
         font-weight: bolder;
-    }
+        }
+    // customize style for navbar search and logout buttons
     .form-search{
+
         button{
             color:white;
             background-color:$forthly-color;
@@ -14,7 +22,7 @@
     .logOut{
         @include for-size(tablet-lg,up) {
             margin-left: 1%;
-        }
+            }
         @include for-size(tablet-lg,down) {
             margin-top: 1%;
             .button-large-md{

@@ -1,3 +1,20 @@
+/********************************
+***            FONTS          ***
+********************************/
+// import for google font: Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
+// free font stored in local storage
+@font-face {
+  font-family: eightBit;
+  src: url(../media/fonts/EightBitDragon-anqx.ttf);
+}
+
+$font8bit: eightBit;
+
+/********************************
+***       COLOR PALETTE       ***
+********************************/
+
 $primary-color: #715BC2;
 $secondary-color: #C42177;
 $thirdly-color: #ffffff;
@@ -6,11 +23,10 @@ $bold: #0C1115;
 
 $carousel-text-color: #fff;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap');
-/* Element First Media Queries
+/* Media Queries simplified using Sass mixins
 ========================================================= */
 
-// A map of breakpoints.
+// a map of breakpoints.
 $breakpoints: (
   phone: 576px,
   tablet: 768px,
@@ -20,15 +36,16 @@ $breakpoints: (
   desktop-xl: 1600px
   );
 
+// mixin called in place of mediaqueries for-size
 @mixin for-size($breakpoint, $direction:down) {
 
-// If the breakpoint exists in the map.
+// if the breakpoint exists in the map.
 @if map-has-key($breakpoints, $breakpoint) {
 
-// Get the breakpoint value.
+// get the breakpoint value.
 $breakpoint-value: map-get($breakpoints, $breakpoint);
 
-// Determine the direction and then write the media query.
+// determine the direction and then write the media query.
 @if $direction == up {
   @media (min-width: $breakpoint-value) {
     @content;
@@ -40,7 +57,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
     }
   }
 }
-// If the breakpoint doesn't exist in the map, pass a manual breakpoint
+// if the breakpoint doesn't exist in the map, pass a manual breakpoint
 @else {
   @if $direction == up {
     @media (min-width: $breakpoint) {
@@ -55,23 +72,21 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
   }
 }
 
-
-$font8bit: eightBit;
-
-@font-face {
-  font-family: eightBit;
-  src: url(../media/fonts/EightBitDragon-anqx.ttf);
-}
+/********************************
+***       COMMON STYLES       ***
+********************************/
 
 h3 {
   font-family: eightBit;
 }
 
+// anchors with no decorations
 a{
   text-decoration: none;
   outline: none;
 }
 
+// grow animation
 .grow { 
   transition: all .2s ease-in-out; 
   filter: initial;
@@ -81,6 +96,8 @@ a{
   transform: scale(1.2);
   filter: saturate(300%);
 }
+
+// shrink animation
 
 .shrink { 
   transition: all .2s ease-in-out; 

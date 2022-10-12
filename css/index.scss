@@ -1,17 +1,25 @@
+// import of variables and coomon styles from global
 @import "./global.scss";
+
+/********************************
+***      RECENTLY PLAYED      ***
+********************************/
 
 .recently-played{
   margin-top: 7vh;
 
+  // also row
   .recently-played-row{
 
+    //also col-md-4 
     .recently-played-item{
       font: 100% $font8bit;
-      
       color: $carousel-text-color;
+
       .recently-played-img{
         width: fit-content;
       }
+      // also card-img-overlay
       .recently-played-overlay{
         left:3%;
           .card-title{
@@ -22,20 +30,25 @@
           }
       }
     }
-    
   }
 }
+
+/********************************
+*****       CATEGORIES      *****
+********************************/
 
 .categories{
   margin-top: 5vh;
   font: 100% $font8bit;
-  
+
+  // collapsable lists when visible
   .collapse.dont-collapse-md {
     @include for-size(tablet-lg,up) {
       display: block;
       height: auto !important;
       visibility: visible;
     }
+    // define-terms elements from definition list
     dt {
       margin-top: 2%;
       
@@ -47,7 +60,7 @@
         max-width: 100%;
       }
     }
-    
+    // define-description from definition list
     dd {
       margin-top: 2%;
       @include for-size(tablet-lg,down){
@@ -57,6 +70,7 @@
   }
 }
 
+// bootstrap cards edit avoiding conflicts
 .card{
   flex-direction: inherit;
   border: 0px;
