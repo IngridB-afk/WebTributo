@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["global.scss","navbar.scss"],"names":[],"mappings":"AAMQ;AACR;AAAA;AAmDA;EACE;EACA;;AAGF;EACE;;;AAGF;EACE;EACA;;;ACnEF;EACI,kBDHY;;ACIZ;EACI;;ADyBN;ECvBE;IAEQ;;;AD0BV;EC5BE;IAKQ","file":"navbar.css"}
+=======
+{"version":3,"sources":["global.scss","navbar.css","navbar.scss"],"names":[],"mappings":"AAQQ,0HAAA;AACR;2DAAA;AAmDA;EACE,qBAAA;EACA,gDAAA;ACxDF;AD2DA;EACE,qBAAA;ACzDF;;AD4DA;EACE,qBAAA;EACA,aAAA;ACzDF;;ACZA;EACI,yBFHY;ACkBhB;ACdI;EACI,mBAAA;ADgBR;ADWE;EEzBE;IAEQ,eAAA;EDgBV;AACF;ADWE;EE9BE;IAKQ,cAAA;EDkBV;AACF","file":"navbar.css"}
+>>>>>>> adrianDev

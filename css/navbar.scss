@@ -9,7 +9,7 @@
         @include for-size(desktop,up) {
             margin-left: 1%;
         }
-        @include for-size(desktop,down) {
+        @include for-size(tablet-lg,down) {
             margin-top: 2%;
         }
     }

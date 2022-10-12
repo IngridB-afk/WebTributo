@@ -57,128 +57,128 @@ body .hover {
 body .number-one {
   transform: translateY(-10px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-10 3006ms ease-in-out infinite;
-          animation: fadeNumberDown-10 3006ms ease-in-out infinite;
+  -webkit-animation: fadeNumberDown-10 3092ms ease-in-out infinite;
+          animation: fadeNumberDown-10 3092ms ease-in-out infinite;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-two {
   transform: translateY(-20px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-20 4923ms ease-in-out infinite;
-          animation: fadeNumberDown-20 4923ms ease-in-out infinite;
-  -webkit-animation-delay: 5882ms;
-          animation-delay: 5882ms;
+  -webkit-animation: fadeNumberDown-20 3231ms ease-in-out infinite;
+          animation: fadeNumberDown-20 3231ms ease-in-out infinite;
+  -webkit-animation-delay: 2162ms;
+          animation-delay: 2162ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-three {
   transform: translateY(-30px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-30 5280ms ease-in-out infinite;
-          animation: fadeNumberDown-30 5280ms ease-in-out infinite;
-  -webkit-animation-delay: 3605ms;
-          animation-delay: 3605ms;
+  -webkit-animation: fadeNumberDown-30 3984ms ease-in-out infinite;
+          animation: fadeNumberDown-30 3984ms ease-in-out infinite;
+  -webkit-animation-delay: 4995ms;
+          animation-delay: 4995ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-four {
   transform: translateY(-50px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-50 2808ms ease-in-out infinite;
-          animation: fadeNumberDown-50 2808ms ease-in-out infinite;
-  -webkit-animation-delay: 3425ms;
-          animation-delay: 3425ms;
+  -webkit-animation: fadeNumberDown-50 5309ms ease-in-out infinite;
+          animation: fadeNumberDown-50 5309ms ease-in-out infinite;
+  -webkit-animation-delay: 1309ms;
+          animation-delay: 1309ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-five {
   transform: translateY(-60px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-60 5038ms ease-in-out infinite;
-          animation: fadeNumberDown-60 5038ms ease-in-out infinite;
-  -webkit-animation-delay: 3946ms;
-          animation-delay: 3946ms;
+  -webkit-animation: fadeNumberDown-60 3586ms ease-in-out infinite;
+          animation: fadeNumberDown-60 3586ms ease-in-out infinite;
+  -webkit-animation-delay: 3384ms;
+          animation-delay: 3384ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-six {
   transform: translateY(-70px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-70 3322ms ease-in-out infinite;
-          animation: fadeNumberDown-70 3322ms ease-in-out infinite;
-  -webkit-animation-delay: 810ms;
-          animation-delay: 810ms;
+  -webkit-animation: fadeNumberDown-70 4524ms ease-in-out infinite;
+          animation: fadeNumberDown-70 4524ms ease-in-out infinite;
+  -webkit-animation-delay: 2992ms;
+          animation-delay: 2992ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-seven {
   transform: translateY(-80px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-80 2144ms ease-in-out infinite;
-          animation: fadeNumberDown-80 2144ms ease-in-out infinite;
-  -webkit-animation-delay: 1370ms;
-          animation-delay: 1370ms;
+  -webkit-animation: fadeNumberDown-80 4636ms ease-in-out infinite;
+          animation: fadeNumberDown-80 4636ms ease-in-out infinite;
+  -webkit-animation-delay: 5284ms;
+          animation-delay: 5284ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-eight {
   transform: translateY(-90px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-90 5669ms ease-in-out infinite;
-          animation: fadeNumberDown-90 5669ms ease-in-out infinite;
-  -webkit-animation-delay: 5307ms;
-          animation-delay: 5307ms;
+  -webkit-animation: fadeNumberDown-90 3800ms ease-in-out infinite;
+          animation: fadeNumberDown-90 3800ms ease-in-out infinite;
+  -webkit-animation-delay: 912ms;
+          animation-delay: 912ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-nine {
   transform: translateY(-100px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-100 5109ms ease-in-out infinite;
-          animation: fadeNumberDown-100 5109ms ease-in-out infinite;
-  -webkit-animation-delay: 4648ms;
-          animation-delay: 4648ms;
+  -webkit-animation: fadeNumberDown-100 5248ms ease-in-out infinite;
+          animation: fadeNumberDown-100 5248ms ease-in-out infinite;
+  -webkit-animation-delay: 606ms;
+          animation-delay: 606ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-ten {
   transform: translateY(-110px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-110 4436ms ease-in-out infinite;
-          animation: fadeNumberDown-110 4436ms ease-in-out infinite;
-  -webkit-animation-delay: 3587ms;
-          animation-delay: 3587ms;
+  -webkit-animation: fadeNumberDown-110 3043ms ease-in-out infinite;
+          animation: fadeNumberDown-110 3043ms ease-in-out infinite;
+  -webkit-animation-delay: 3641ms;
+          animation-delay: 3641ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-eleven {
   transform: translateY(-120px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-120 3656ms ease-in-out infinite;
-          animation: fadeNumberDown-120 3656ms ease-in-out infinite;
-  -webkit-animation-delay: 1416ms;
-          animation-delay: 1416ms;
+  -webkit-animation: fadeNumberDown-120 4660ms ease-in-out infinite;
+          animation: fadeNumberDown-120 4660ms ease-in-out infinite;
+  -webkit-animation-delay: 4111ms;
+          animation-delay: 4111ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-twelve {
   transform: translateY(-150px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-150 4075ms ease-in-out infinite;
-          animation: fadeNumberDown-150 4075ms ease-in-out infinite;
-  -webkit-animation-delay: 5560ms;
-          animation-delay: 5560ms;
+  -webkit-animation: fadeNumberDown-150 2150ms ease-in-out infinite;
+          animation: fadeNumberDown-150 2150ms ease-in-out infinite;
+  -webkit-animation-delay: 524ms;
+          animation-delay: 524ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 body .number-thirteen {
   transform: translateY(-160px) translateZ(0);
   opacity: 0;
-  -webkit-animation: fadeNumberDown-160 5638ms ease-in-out infinite;
-          animation: fadeNumberDown-160 5638ms ease-in-out infinite;
-  -webkit-animation-delay: 1306ms;
-          animation-delay: 1306ms;
+  -webkit-animation: fadeNumberDown-160 5502ms ease-in-out infinite;
+          animation: fadeNumberDown-160 5502ms ease-in-out infinite;
+  -webkit-animation-delay: 2067ms;
+          animation-delay: 2067ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

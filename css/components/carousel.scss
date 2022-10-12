@@ -1,0 +1,92 @@
+    @import "../global.scss";
+    
+    .carousel{
+        @media (max-width: 767px) {
+        .carousel-inner .carousel-item > div {
+            display: none;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+    }
+    @media (max-width: 767px) {
+        .carousel-item{
+        margin-left: 3% ;
+        }
+    
+        .carousel-control-prev {
+        left: 4%;
+        }
+        
+        .carousel-control-next {
+        right: 4%;
+        }
+    }
+    
+    @media (max-width: 576px) {
+    
+        .carousel-control-prev {
+        left: 2%;
+        }
+        
+        .carousel-control-next {
+        right: 2%;
+        }
+    }
+    
+    
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex;
+    }
+    
+    .carousel-item {
+        font: 100% $font8bit;
+        color: #fff;
+        .grow { 
+        transition: all .2s ease-in-out; 
+        filter: initial;
+        }
+        
+        .grow:hover { 
+        transform: scale(1.2);
+        filter: saturate(300%);
+        }
+        .carousel-overlay{
+        top:65%;
+        }
+        @media (max-width: 992px) {
+        .carousel-overlay{
+            top: 50%;
+            font-size: 0.75rem; 
+        }
+        }
+    
+        @media (max-width: 768px) {
+        .carousel-overlay{
+            top: 70%;
+            font-size: 1rem; 
+        }
+        }
+    }
+    
+    
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+            transform: translateX(25%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+            transform: translateX(-25%);
+        }
+    }
+    
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+        transform: translateX(0);
+    }
+}

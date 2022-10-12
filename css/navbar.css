@@ -25,10 +25,8 @@ a {
     margin-left: 1%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .navbar .logOut {
     margin-top: 2%;
   }
-}
-
-/*# sourceMappingURL=navbar.css.map */
+}/*# sourceMappingURL=navbar.css.map */
