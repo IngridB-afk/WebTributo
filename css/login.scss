@@ -241,19 +241,13 @@ section {
             }
 
             .input-login {
-                background-color: $forthly-color;
                 position: relative;
-                color: $thirdly-color;
 
             }
 
             .login {
-                background-color: $secondary-color;
                 position: relative;
-				a:visited{
-					color: $thirdly-color;
-
-				}
+				
             }
 
             .remember {
@@ -300,7 +294,7 @@ section {
     }
 }
 .input-login:invalid {
-	background-color: ivory;
+	
 	border: none;
 	outline: 2px solid red;
 	border-radius: 5px;
