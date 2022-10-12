@@ -1,21 +1,25 @@
-# WebTributo
-## WebTributo is a web page to show our hobbies.
+# Games-A
+## Games-A is a web page wher you can share your passion for videogames.
 
 [![Build Status](media/icons/build-passing.svg)](https://github.com/adriansunye/WebTributo)
 
-WebTributo is a web page to show our hobbies.
+Games-A is a prototype of functional web to show our passion for videogames and improve our coding abilities.
 
 ## Features
 
+- Login
+- Home Page
 - User profile
-- Categories
+- View in detail
+- About Us
 
-> Show our capabilities of organization
-> Developing our first web-app
+> The principal objective was to show our capabilities of organization
+> using scrum methodologies and kanban. For our first project we had to 
+> design and code 5 different views.
 
 ## Tech
 
-WebTributo uses a number of open source projects to work properly:
+Games-A uses a number of open source projects to work properly:
 
 - [HTML]
 - [Sass] 
@@ -25,15 +29,17 @@ WebTributo uses a number of open source projects to work properly:
 
 ## Resources
 
-WebTributo uses this as reference:
+Games-A uses this as reference:
 
 - [Bootsrap Navbar]
 - [Bootstrap Carousel]
+- [Carousel fix] - Carousel for bootsrap 5.2 edit for multiple items
 - [8 Bit Dragon Font]
+- [Media Queries simplified for Sass] - Sass mixin used to simplify Media Queries
 
 ## Installation
 
-WebTributo uses Sass requires [Node.js](https://nodejs.org/) v10+ to install.
+Games-A uses Sass requires [Node.js](https://nodejs.org/) v10+ to install.
 
 To install Sass:
 
@@ -63,6 +69,8 @@ Images from Steam
    [jQuery]: <http://jquery.com>
    [Sass]: <https://sass-lang.com/install>
    
-   [Bootsrap Navbar]: <https://getbootstrap.com/docs/5.0/components/carousel/>
-   [Bootstrap Carousel]: <https://getbootstrap.com/docs/5.0/components/navbar/>
+   [Bootsrap Navbar]: <https://getbootstrap.com/docs/5.0/components/navbar/>
+   [Bootstrap Carousel]: <https://getbootstrap.com/docs/5.0/components/carousel/>
    [8 Bit Dragon Font]: <https://www.fontspace.com/eight-bit-dragon-font-f30428>
+   [Carousel fix]: <https://www.codeply.com/p/0CWffz76Q9>
+   [Media Queries simplified for Sass]: <https://cheewebdevelopment.com/element-first-scss-media-queries/>
